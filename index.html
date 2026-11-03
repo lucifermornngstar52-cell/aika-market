@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a12">
+<title>Aika Market — свой магазин приложений</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo">A</div>
+    <div class="brand-text">
+      <b>Aika Market</b>
+      <span>свой магазин</span>
+    </div>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск приложений и игр" autocomplete="off">
+    <button id="clearQ" class="clear" aria-label="Очистить">×</button>
+  </div>
+</header>
+
+<nav class="chips" id="chips">
+  <button class="chip active" data-cat="all">Все</button>
+  <button class="chip" data-cat="game">Игры</button>
+  <button class="chip" data-cat="app">Приложения</button>
+  <button class="chip" data-cat="tool">Инструменты</button>
+  <button class="chip" data-cat="web">Веб</button>
+</nav>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-body">
+      <span class="hero-tag">обновления подтягиваются сами</span>
+      <h1>Всё моё в одном месте</h1>
+      <p>Скачивай и обновляй APK прямо отсюда. Вышла новая версия — она появится тут автоматически.</p>
+      <div class="hero-stats">
+        <div><b id="stCount">—</b><span>приложений</span></div>
+        <div><b id="stSize">—</b><span>всего скачано</span></div>
+        <div><b id="stFresh">—</b><span>последнее обновление</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="row-head">
+    <h2 id="listTitle">Приложения</h2>
+    <button class="refresh" id="refresh" title="Обновить каталог">⟳</button>
+  </div>
+
+  <div id="list" class="list"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+  <div id="empty" class="empty hidden">Ничего не нашлось</div>
+</main>
+
+<div id="sheet" class="sheet hidden">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-card" id="sheetCard"></div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<footer class="foot">
+  <span>Aika Market · собрано с любовью к своим приложениям</span>
+  <span id="footHint">нужно разрешить установку из неизвестных источников</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
