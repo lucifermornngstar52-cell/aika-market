@@ -255,7 +255,7 @@ function render() {
       + (apk ? '' : ' <span class="badge">веб</span>'));
     main.appendChild(titleRow);
     main.appendChild(el('div', 'card-sub', apk
-      ? `${a.latest.name} · ${fmtSize(apk.size)} · ${ago(a.latest.date)}`
+      ? `${a.latest.tag} · ${fmtSize(apk.size)} · ${ago(a.latest.date)}`
       : 'открывается в браузере, без установки'));
     const catIcon = a.cat === 'game' ? 'i-game' : a.cat === 'tool' ? 'i-tool' : a.cat === 'web' ? 'i-web' : 'i-app';
     const catName = a.cat === 'game' ? 'игра' : a.cat === 'tool' ? 'инструмент' : a.cat === 'web' ? 'сайт' : 'приложение';
