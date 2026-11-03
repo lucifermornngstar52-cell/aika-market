@@ -281,12 +281,19 @@ function render() {
     main.appendChild(el('div', 'card-sub', apk
       ? `${a.latest.name} · ${fmtSize(apk.size)} · ${ago(a.latest.date)}`
       : 'открывается в браузере, без установки'));
-    main.appendChild(el('div', 'card-meta',
-      `<span>${a.cat === 'game' ? '🎮 игра' : a.cat === 'tool' ? '🛠 инструмент' : a.cat === 'web' ? '🌐 сайт' : '📱 приложение'}</span>`
-      + (apk ? `<em>${apk.downloads} скачиваний</em>` : '')));
+    const catIcon = a.cat === 'game' ? 'i-game' : a.cat === 'tool' ? 'i-tool' : a.cat === 'web' ? 'i-web' : 'i-app';
+    const catName = a.cat === 'game' ? 'игра' : a.cat === 'tool' ? 'инструмент' : a.cat === 'web' ? 'сайт' : 'приложение';
+    const meta = el('div', 'card-meta');
+    meta.appendChild(el('span', 'm-item', `<svg class="mi"><use href="#${catIcon}"/></svg>${catName}`));
+    if (apk) {
+      meta.appendChild(el('span', 'm-item', `<svg class="mi"><use href="#i-down"/></svg><em>${apk.downloads}</em>`));
+      meta.appendChild(el('span', 'm-item', `<svg class="mi"><use href="#i-size"/></svg>${fmtSize(apk.size)}`));
+    }
+    main.appendChild(meta);
     card.appendChild(main);
 
-    const btn = el('button', 'get', apk ? 'Скачать' : 'Открыть');
+    const btn = el('button', 'get',
+      `<svg class="ti"><use href="#${apk ? 'i-down' : 'i-open'}"/></svg>${apk ? 'скачать' : 'открыть'}`);
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       if (apk) {
@@ -330,19 +337,19 @@ function openSheet(a) {
 
   const actions = el('div', 'sheet-actions');
   if (apk) {
-    const b = el('button', 'install', 'Установить ' + fmtSize(apk.size));
+    const b = el('button', 'install', `<svg class="ti"><use href="#i-down"/></svg>установить · ${fmtSize(apk.size)}`);
     b.addEventListener('click', () => {
       window.location.href = apk.url;
       toast('Загрузка APK началась');
     });
     actions.appendChild(b);
   } else if (a.web) {
-    const b = el('button', 'install', 'Открыть в браузере');
+    const b = el('button', 'install', `<svg class="ti"><use href="#i-open"/></svg>открыть в браузере`);
     b.addEventListener('click', () => window.open(a.web, '_blank'));
     actions.appendChild(b);
   }
   if (a.web && apk) {
-    const g = el('button', 'ghost', '🌐 Веб');
+    const g = el('button', 'ghost', `<svg class="ti"><use href="#i-web"/></svg>веб`);
     g.addEventListener('click', () => window.open(a.web, '_blank'));
     actions.appendChild(g);
   }
@@ -352,10 +359,10 @@ function openSheet(a) {
 
   if (a.latest) {
     const facts = el('div', 'facts');
-    facts.appendChild(el('div', 'fact', `<span>размер</span><b>${fmtSize(apk ? apk.size : 0)}</b>`));
-    facts.appendChild(el('div', 'fact', `<span>скачиваний</span><b>${(a.releases[0].assets.reduce((s, x) => s + x.downloads, 0))}</b>`));
-    facts.appendChild(el('div', 'fact', `<span>обновлено</span><b>${fmtDate(a.latest.date)}</b>`));
-    facts.appendChild(el('div', 'fact', `<span>версий</span><b>${a.releases.length}</b>`));
+    facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-size"/></svg>размер</span><b>${fmtSize(apk ? apk.size : 0)}</b>`));
+    facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-down"/></svg>скачиваний</span><b>${a.releases[0].assets.reduce((s, x) => s + x.downloads, 0)}</b>`));
+    facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-refresh"/></svg>обновлено</span><b>${fmtDate(a.latest.date)}</b>`));
+    facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-all"/></svg>версий</span><b>${a.releases.length}</b>`));
     card.appendChild(facts);
   }
 
@@ -368,7 +375,7 @@ function openSheet(a) {
         `<b>${r.tag}${i === 0 ? ' · актуальная' : ''}</b><span>${fmtDate(r.date)}${apkR ? ' · ' + fmtSize(apkR.size) : ''}</span>`));
       if (r.notes) v.appendChild(el('div', 'ver-notes', r.notes));
       if (apkR) {
-        const g = el('button', 'get', 'Скачать ' + r.tag);
+        const g = el('button', 'get', `<svg class="ti"><use href="#i-down"/></svg>скачать ${r.tag}`);
         g.addEventListener('click', () => {
           window.location.href = apkR.url;
           toast('Загрузка APK началась');
