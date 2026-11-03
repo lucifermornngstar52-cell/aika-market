@@ -1,61 +1,6 @@
 {
- "generated": "2026-11-03T14:31:08.729Z",
+ "generated": "2026-11-03T14:39:30.427Z",
  "items": [
-  {
-   "title": "HIKARI store",
-   "cat": "tool",
-   "icon": "assets/icons/hikari.png",
-   "grad": [
-    "#5cb8e8",
-    "#2b5f8f"
-   ],
-   "desc": "Этот самый магазин, но как приложение: та же полка, тот же каталог, установка в один тап.",
-   "web": "https://lucifermornngstar52-cell.github.io/aika-market/",
-   "releases": [
-    {
-     "tag": "v1.1",
-     "name": "HIKARI store v1.1",
-     "notes": "- новая иконка приложения\n- JetBrains Mono и рукописные подписи\n- сгенерированные иконки у всех приложений\n- микрозначки вместо эмодзи в кнопках и метках",
-     "date": "2026-11-03T14:31:02Z",
-     "assets": [
-      {
-       "name": "HikariStore-1.1.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.1/HikariStore-1.1.apk",
-       "size": 158884,
-       "downloads": 0
-      }
-     ]
-    },
-    {
-     "tag": "v1.0",
-     "name": "Aika Market v1.0 — приложение",
-     "notes": "Первый APK магазина: каталог моих приложений и игр, поиск, версии, установка в один тап.\n\n- стиль в духе knice.tech: графит, стекло, белые кнопки\n- каталог из GitHub Releases, обновляется сам\n- работает оффлайн по кэшу",
-     "date": "2026-11-03T13:43:24Z",
-     "assets": [
-      {
-       "name": "AikaMarket-1.0.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.0/AikaMarket-1.0.apk",
-       "size": 106892,
-       "downloads": 1
-      }
-     ]
-    }
-   ],
-   "latest": {
-    "tag": "v1.1",
-    "name": "HIKARI store v1.1",
-    "notes": "- новая иконка приложения\n- JetBrains Mono и рукописные подписи\n- сгенерированные иконки у всех приложений\n- микрозначки вместо эмодзи в кнопках и метках",
-    "date": "2026-11-03T14:31:02Z",
-    "assets": [
-     {
-      "name": "HikariStore-1.1.apk",
-      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.1/HikariStore-1.1.apk",
-      "size": 158884,
-      "downloads": 0
-     }
-    ]
-   }
-  },
   {
    "title": "Aika Assistant",
    "cat": "app",
@@ -204,7 +149,7 @@
     "#ff6b81"
    ],
    "desc": "Игра на углы между стрелками часов: четыре уровня сложности, тысячи вопросов, монеты и достижения. Плюс книга задач «Математика времени» в стиле Рика и Морти.",
-   "web": "https://lucifermornngstar52-cell.github.io/clock-angle-game/",
+   "web": "",
    "releases": [
     {
      "tag": "numbra-release",
@@ -257,145 +202,6 @@
    }
   },
   {
-   "title": "Rust Lite",
-   "cat": "game",
-   "icon": "assets/icons/rustlite.png",
-   "grad": [
-    "#c98b5e",
-    "#7a4a2a"
-   ],
-   "desc": "Выживание на минималках: собирай, строй, держись подальше от чужих. Лёгкая сборка для слабых телефонов.",
-   "web": "",
-   "releases": [
-    {
-     "tag": "v8",
-     "name": "Rust Lite v8 — поддержка в игре",
-     "notes": "Пункт Поддержка в меню: Telegram @Unqra",
-     "date": "2026-10-27T01:38:43Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
-       "size": 286296,
-       "downloads": 3
-      }
-     ]
-    },
-    {
-     "tag": "v7",
-     "name": "Rust Lite v7 — обновление игры",
-     "notes": "Новая версия выживания: ресурсы, база, охота, ночь.",
-     "date": "2026-10-27T01:35:17Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v7/RustLite.apk",
-       "size": 286207,
-       "downloads": 0
-      }
-     ]
-    },
-    {
-     "tag": "v6",
-     "name": "Rust Lite v6 — творческий режим, кнопка «бросить» в инвентаре",
-     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
-     "date": "2026-10-20T10:01:44Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v6/RustLite.apk",
-       "size": 290336,
-       "downloads": 3
-      }
-     ]
-    },
-    {
-     "tag": "v5",
-     "name": "Rust Lite v5 — размер выбранной кнопки и прочие обновления игры",
-     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
-     "date": "2026-10-20T02:08:41Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v5/RustLite.apk",
-       "size": 287610,
-       "downloads": 4
-      }
-     ]
-    },
-    {
-     "tag": "v4",
-     "name": "Rust Lite v4 — Three.js вшит в APK, игра работает офлайн",
-     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
-     "date": "2026-10-19T14:41:37Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v4/RustLite.apk",
-       "size": 281790,
-       "downloads": 4
-      }
-     ]
-    },
-    {
-     "tag": "v3",
-     "name": "Rust Lite v3 — обновление игры (настройки кнопок, яркость, авто-качество)",
-     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
-     "date": "2026-10-19T14:22:22Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v3/RustLite.apk",
-       "size": 100137,
-       "downloads": 4
-      }
-     ]
-    },
-    {
-     "tag": "v2",
-     "name": "Rust Lite v2 (совместимость со старыми WebView)",
-     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
-     "date": "2026-10-19T13:25:36Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v2/RustLite.apk",
-       "size": 93698,
-       "downloads": 5
-      }
-     ]
-    },
-    {
-     "tag": "v1",
-     "name": "Rust Lite v1",
-     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
-     "date": "2026-10-19T11:33:05Z",
-     "assets": [
-      {
-       "name": "RustLite.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v1/RustLite.apk",
-       "size": 88829,
-       "downloads": 9
-      }
-     ]
-    }
-   ],
-   "latest": {
-    "tag": "v8",
-    "name": "Rust Lite v8 — поддержка в игре",
-    "notes": "Пункт Поддержка в меню: Telegram @Unqra",
-    "date": "2026-10-27T01:38:43Z",
-    "assets": [
-     {
-      "name": "RustLite.apk",
-      "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
-      "size": 286296,
-      "downloads": 3
-     }
-    ]
-   }
-  },
-  {
    "title": "АЙКА МИР",
    "cat": "app",
    "icon": "assets/icons/aika-world.png",
@@ -403,8 +209,8 @@
     "#4fd7ff",
     "#2b6bff"
    ],
-   "desc": "Пиксельная деревня, которая живёт своей жизнью: процедурные жители, погода, циклы дня. APK-обёртка онлайн-мира.",
-   "web": "https://lucifermornngstar52-cell.github.io/aika-world/",
+   "desc": "Пиксельная деревня, которая живёт своей жизнью: процедурные жители, погода, циклы дня. Работает офлайн, интернет не нужен.",
+   "web": "",
    "releases": [
     {
      "tag": "v1.0.23",
@@ -556,10 +362,38 @@
     "#ff2d95",
     "#7000ff"
    ],
-   "desc": "Браузерный 3D-шутер на Three.js: неоновый город, стрельба, мобильное управление. Открывается прямо в браузере.",
-   "web": "https://lucifermornngstar52-cell.github.io/neon-strike/",
-   "releases": [],
-   "latest": null
+   "desc": "Неоновый 3D-шутер на Three.js: город, стрельба, мобильное управление. Теперь как приложение — полный экран, без адресной строки.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "app-v1",
+     "name": "app-v1 — приложение",
+     "notes": "NEON STRIKE как приложение: тот же шутер, но запускается с рабочего стола и в полный экран.",
+     "date": "2026-11-03T14:38:59Z",
+     "assets": [
+      {
+       "name": "NeonStrike.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/neon-strike/releases/download/app-v1/NeonStrike.apk",
+       "size": 222083,
+       "downloads": 0
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "app-v1",
+    "name": "app-v1 — приложение",
+    "notes": "NEON STRIKE как приложение: тот же шутер, но запускается с рабочего стола и в полный экран.",
+    "date": "2026-11-03T14:38:59Z",
+    "assets": [
+     {
+      "name": "NeonStrike.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/neon-strike/releases/download/app-v1/NeonStrike.apk",
+      "size": 222083,
+      "downloads": 0
+     }
+    ]
+   }
   },
   {
    "title": "ЖОЛ — симулятор вождения",
@@ -569,23 +403,177 @@
     "#5ef2d6",
     "#0f8f6b"
    ],
-   "desc": "Симулятор вождения по правилам ПДД Казахстана: знаки, разметка, экзаменационные маршруты.",
-   "web": "https://lucifermornngstar52-cell.github.io/zhol-driving-sim/",
-   "releases": [],
-   "latest": null
+   "desc": "Симулятор вождения по правилам ПДД Казахстана: знаки, разметка, экзаменационные маршруты. Отдельным приложением, в полный экран.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "app-v1",
+     "name": "app-v1 — приложение",
+     "notes": "ЖОЛ — симулятор вождения как приложение: полный экран, без браузерной строки.",
+     "date": "2026-11-03T14:39:02Z",
+     "assets": [
+      {
+       "name": "Zhol.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zhol-driving-sim/releases/download/app-v1/Zhol.apk",
+       "size": 165208,
+       "downloads": 0
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "app-v1",
+    "name": "app-v1 — приложение",
+    "notes": "ЖОЛ — симулятор вождения как приложение: полный экран, без браузерной строки.",
+    "date": "2026-11-03T14:39:02Z",
+    "assets": [
+     {
+      "name": "Zhol.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/zhol-driving-sim/releases/download/app-v1/Zhol.apk",
+      "size": 165208,
+      "downloads": 0
+     }
+    ]
+   }
   },
   {
-   "title": "PenkovBank",
-   "cat": "tool",
-   "icon": "assets/icons/penkovbank.png",
+   "title": "Rust Lite",
+   "cat": "game",
+   "icon": "assets/icons/rustlite.png",
    "grad": [
-    "#8ad4ff",
-    "#2452ff"
+    "#c98b5e",
+    "#7a4a2a"
    ],
-   "desc": "Цифровой банк нового поколения: карты, переводы, интерфейс как у настоящего банка.",
-   "web": "https://lucifermornngstar52-cell.github.io/penkov-bank/",
-   "releases": [],
-   "latest": null
+   "desc": "Выживание на минималках: собирай, строй, держись подальше от чужих. Лёгкая сборка для слабых телефонов.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "v8",
+     "name": "Rust Lite v8 — поддержка в игре",
+     "notes": "Пункт Поддержка в меню: Telegram @Unqra",
+     "date": "2026-10-27T01:38:43Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
+       "size": 286296,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v7",
+     "name": "Rust Lite v7 — обновление игры",
+     "notes": "Новая версия выживания: ресурсы, база, охота, ночь.",
+     "date": "2026-10-27T01:35:17Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v7/RustLite.apk",
+       "size": 286207,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "v6",
+     "name": "Rust Lite v6 — творческий режим, кнопка «бросить» в инвентаре",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-20T10:01:44Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v6/RustLite.apk",
+       "size": 290336,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v5",
+     "name": "Rust Lite v5 — размер выбранной кнопки и прочие обновления игры",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-20T02:08:41Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v5/RustLite.apk",
+       "size": 287610,
+       "downloads": 4
+      }
+     ]
+    },
+    {
+     "tag": "v4",
+     "name": "Rust Lite v4 — Three.js вшит в APK, игра работает офлайн",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T14:41:37Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v4/RustLite.apk",
+       "size": 281790,
+       "downloads": 4
+      }
+     ]
+    },
+    {
+     "tag": "v3",
+     "name": "Rust Lite v3 — обновление игры (настройки кнопок, яркость, авто-качество)",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T14:22:22Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v3/RustLite.apk",
+       "size": 100137,
+       "downloads": 4
+      }
+     ]
+    },
+    {
+     "tag": "v2",
+     "name": "Rust Lite v2 (совместимость со старыми WebView)",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T13:25:36Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v2/RustLite.apk",
+       "size": 93698,
+       "downloads": 5
+      }
+     ]
+    },
+    {
+     "tag": "v1",
+     "name": "Rust Lite v1",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T11:33:05Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v1/RustLite.apk",
+       "size": 88829,
+       "downloads": 9
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "v8",
+    "name": "Rust Lite v8 — поддержка в игре",
+    "notes": "Пункт Поддержка в меню: Telegram @Unqra",
+    "date": "2026-10-27T01:38:43Z",
+    "assets": [
+     {
+      "name": "RustLite.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
+      "size": 286296,
+      "downloads": 3
+     }
+    ]
+   }
   },
   {
    "title": "nanoGPT",
@@ -595,23 +583,204 @@
     "#a06bff",
     "#4b1f8f"
    ],
-   "desc": "GPT с нуля на чистом NumPy: 350 тысяч параметров, написан вручную, обучается прямо в браузере.",
-   "web": "https://lucifermornngstar52-cell.github.io/nano-gpt/",
-   "releases": [],
-   "latest": null
-  },
-  {
-   "title": "История Новомихайловки",
-   "cat": "web",
-   "icon": "assets/icons/novomihaylovka.png",
-   "grad": [
-    "#e0b98a",
-    "#8a5a2b"
+   "desc": "GPT с нуля на чистом NumPy: 350 тысяч параметров, написан вручную, обучается прямо на телефоне.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "app-v1",
+     "name": "app-v1 — приложение",
+     "notes": "nanoGPT как приложение: обучение GPT прямо с телефона.",
+     "date": "2026-11-03T14:39:03Z",
+     "assets": [
+      {
+       "name": "NanoGPT.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/app-v1/NanoGPT.apk",
+       "size": 173684,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "corpus-700m",
+     "name": "corpus-700m tokens",
+     "notes": "Токенизированный корпус для 700M (uint16, словарь 8192)",
+     "date": "2026-09-29T13:19:07Z",
+     "assets": [
+      {
+       "name": "bpe_tokenizer_700.json",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/bpe_tokenizer_700.json",
+       "size": 744791,
+       "downloads": 2
+      },
+      {
+       "name": "tok700_00.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_00.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_00.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_00.p0",
+       "size": 1900000000,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_00.p1",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_00.p1",
+       "size": 43300264,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_01.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_01.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_01.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_01.p0",
+       "size": 1900000000,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_01.p1",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_01.p1",
+       "size": 117519638,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_02.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_02.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_02.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_02.p0",
+       "size": 1724427574,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_03.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_03.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_03.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_03.p0",
+       "size": 1654295816,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_04.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_04.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_04.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_04.p0",
+       "size": 1299179450,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_05.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_05.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_05.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_05.p0",
+       "size": 1108393648,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_06.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_06.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_06.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_06.p0",
+       "size": 1900000000,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_06.p1",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_06.p1",
+       "size": 294778356,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_07.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_07.done",
+       "size": 33,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_07.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_07.p0",
+       "size": 1900000000,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_07.p1",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_07.p1",
+       "size": 65638472,
+       "downloads": 0
+      },
+      {
+       "name": "tok700_dial.done",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_dial.done",
+       "size": 32,
+       "downloads": 1
+      },
+      {
+       "name": "tok700_dial.p0",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_dial.p0",
+       "size": 132140652,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "char-150m",
+     "name": "NANO-GPT 150M char weights",
+     "notes": "",
+     "date": "2026-09-28T07:44:35Z",
+     "assets": [
+      {
+       "name": "meta_150m.json",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/char-150m/meta_150m.json",
+       "size": 1724,
+       "downloads": 9
+      },
+      {
+       "name": "weights_150m_fp16.npz",
+       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/char-150m/weights_150m_fp16.npz",
+       "size": 303737856,
+       "downloads": 10
+      }
+     ]
+    }
    ],
-   "desc": "История села Новомихайловка с 1895 по 2026 год: архивные материалы, фотографии, хронология.",
-   "web": "https://lucifermornngstar52-cell.github.io/novomihaylovka/",
-   "releases": [],
-   "latest": null
+   "latest": {
+    "tag": "app-v1",
+    "name": "app-v1 — приложение",
+    "notes": "nanoGPT как приложение: обучение GPT прямо с телефона.",
+    "date": "2026-11-03T14:39:03Z",
+    "assets": [
+     {
+      "name": "NanoGPT.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/app-v1/NanoGPT.apk",
+      "size": 173684,
+      "downloads": 0
+     }
+    ]
+   }
   },
   {
    "title": "ZikOS",
@@ -621,10 +790,231 @@
     "#5ef2d6",
     "#0a6a7a"
    ],
-   "desc": "Веб-операционная система в браузере: окна, приложения, рабочий стол.",
-   "web": "https://lucifermornngstar52-cell.github.io/zik-os/",
-   "releases": [],
-   "latest": null
+   "desc": "Веб-операционная система: окна, приложения, рабочий стол. Собрана в отдельное приложение.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "v3.3",
+     "name": "HikariOS 3.2 — Поддержка в Настройках",
+     "notes": "HikariOS 3.2 — пункт «Поддержка».\n\nВ Настройках появилась карточка «Поддержка»: вопросы, баги и пожелания — в Telegram @Unqra",
+     "date": "2026-10-27T01:42:46Z",
+     "assets": [
+      {
+       "name": "HikariOS-3.2.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.3/HikariOS-3.2.apk",
+       "size": 149417,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "app-v1",
+     "name": "app-v1 — приложение",
+     "notes": "ZikOS как приложение: веб-операционная система в полный экран.",
+     "date": "2026-11-03T14:39:05Z",
+     "assets": [
+      {
+       "name": "ZikOS.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/app-v1/ZikOS.apk",
+       "size": 112404,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "v3.2",
+     "name": "Hikari Remote 1.2 — альбомная клавиатура",
+     "notes": "Hikari Remote 1.2 — клавиатура в горизонтальном режиме.\n\n• Клавиатура теперь всегда открывается в альбомной ориентации — кнопки крупные, удобно печатать двумя большими пальцами\n• Системные панельки скрываются, экран от края до края отдан кнопкам\n• Мышка остаётся как была — ей любой поворот удобен",
+     "date": "2026-10-21T15:53:37Z",
+     "assets": [
+      {
+       "name": "HikariRemote-1.2.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.2/HikariRemote-1.2.apk",
+       "size": 24340,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v3.1",
+     "name": "HikariOS 3.1 — Wi-Fi Remote",
+     "notes": "HikariOS 3.1 — Wi-Fi вместо Bluetooth + панель-полоска.\n\n• Панель задач в полноэкранном режиме больше НЕ исчезает: остаётся тонкая полоска внизу, коснись её — панель выезжает целиком\n• Подключение телефона переведено на Wi-Fi: телефон сам находит планшет в сети (автопоиск), Bluetooth остался как запасной вариант, если он вдруг есть\n• В Настройках планшета теперь виден его IP для ручного подключения\n• Hikari Remote: кнопка «Найти планшет», ручной ввод IP, режимы Клавиатура и Мышка как прежде",
+     "date": "2026-10-21T14:45:07Z",
+     "assets": [
+      {
+       "name": "HikariOS-3.1.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.1/HikariOS-3.1.apk",
+       "size": 149283,
+       "downloads": 4
+      },
+      {
+       "name": "HikariRemote-1.1.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.1/HikariRemote-1.1.apk",
+       "size": 24263,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v3.0",
+     "name": "HikariOS 3.0 + Hikari Remote",
+     "notes": "HikariOS 3.0 — телефон как клавиатура и мышь.\n\nНОВОЕ: Hikari Remote — приложение для телефона. Две программы в одном APK:\n• Клавиатура: полноэкранная EN/RU раскладка (переключение кнопкой), Shift, Backspace с автоповтором, Enter\n• Мышка: тёмный тачпад на весь экран — водишь пальцем, курсор ползёт по планшету; тап — клик, два пальца тап — правая кнопка, два пальца вверх/вниз — колесо\n\nНа планшете: Настройки → «Bluetooth-клавиатура и мышь» → включить приём.\nНа телефоне: сопряги с планшетом в настройках Bluetooth, выбери планшет в Hikari Remote, выбери программу.\n\nТакже в 3.0: переключатель Bluetooth-входа в настройках, курсор мыши в HikariOS, вся печать и клики идут прямо в открытые приложения (Терминал, Блокнот, Код и т.д.).",
+     "date": "2026-10-21T10:28:03Z",
+     "assets": [
+      {
+       "name": "HikariOS-3.0.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.0/HikariOS-3.0.apk",
+       "size": 146880,
+       "downloads": 0
+      },
+      {
+       "name": "HikariRemote-1.0.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.0/HikariRemote-1.0.apk",
+       "size": 21291,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v2.9",
+     "name": "HikariOS 2.9 — чистый просмотр HTML",
+     "notes": "HikariOS 2.9 — чистый просмотр HTML-приложений.\n\n• HTML-файлы (свои игры, сайты, файлы из Download планшета) открываются на весь экран\n• Никакой шапки, кнопок и рамок — только круглый крестик в углу, он полупрозрачный и не мешает\n• Закрыл крестиком — вернулся на рабочий стол",
+     "date": "2026-10-21T10:14:23Z",
+     "assets": [
+      {
+       "name": "HikariOS-2.9.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.9/HikariOS-2.9.apk",
+       "size": 142584,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v2.8",
+     "name": "HikariOS 2.8 — Liquid Glass",
+     "notes": "HikariOS 2.8 — Liquid Glass и мост к планшету.\n\n• Стиль Liquid Glass: полупрозрачные матовые окна и панель с размытием фона, светлые отблески по краям\n• Плавная анимация открытия приложений (масштаб + всплытие)\n• Кнопка Пуск теперь строго по центру экрана; закреплённые — слева от неё, запущенные — справа\n• В полноэкранном режиме панель задач скрывается — проведи у нижнего края, и она выглянет\n• Новое приложение «Приложения планшета»: запускает любые приложения Android прямо из HikariOS\n• Файлы: раздел «Планшет» — настоящая память устройства, папка Download. Скачал .html в браузере — открывай его прямо в HikariOS\n• Первый вход в «Планшет» попросит разрешение на доступ к памяти — разреши один раз",
+     "date": "2026-10-21T10:05:09Z",
+     "assets": [
+      {
+       "name": "HikariOS-2.8.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.8/HikariOS-2.8.apk",
+       "size": 142236,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v2.7",
+     "name": "HikariOS 2.7 — закрепление в панель задач",
+     "notes": "HikariOS 2.7 — закрепление приложений в панели задач.\n\n• Из трея убрана кнопка темы (тема меняется в Настройках)\n• Долгое нажатие на плитке в меню Пуск → «Закрепить в панели задач» (или правый клик по плитке)\n• Закреплённые приложения живут в панели рядом с Пуском, с точкой-индикатором\n• Открепить: долгое нажатие по кнопке в панели\n• Кнопка запущенного окна открывает/сворачивает приложение как раньше\n• Работает и для системных приложений, и для твоих созданных",
+     "date": "2026-10-21T07:24:09Z",
+     "assets": [
+      {
+       "name": "HikariOS-2.7.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.7/HikariOS-2.7.apk",
+       "size": 137813,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v2.6",
+     "name": "HikariOS 2.6 — чистый таскбар и трей",
+     "notes": "HikariOS 2.6 — чистая панель задач.\n\n• Из панели убраны все иконки приложений — осталась только кнопка Пуск по центру, как в Windows 11\n• Запущенные окна сами появляются кнопками в панели (свернул — кнопка осталась, кликнул — вернул окно)\n• Справа системный трей: Wi-Fi, батарея с процентом заряда, дата и время, переключатель темы\n• Приложения запускаются с рабочего стола или из меню Пуск",
+     "date": "2026-10-21T07:11:27Z",
+     "assets": [
+      {
+       "name": "HikariOS-2.6.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.6/HikariOS-2.6.apk",
+       "size": 136702,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "v2.5",
+     "name": "HikariOS 2.5 — вкладки в меню Пуск",
+     "notes": "HikariOS 2.5 — две кнопки в меню Пуск.\n\n• Вкладка «Рабочий стол»: системные приложения, как раньше\n• Вкладка «Мои приложения»: твои созданные и установленные — только они\n• Поиск работает в обеих вкладках\n• Заодно починена кнопка Пуск (не открывалась после 2.3 из-за съеденной переменной menuOpen)\n• Низ меню: hikari · user@hikarios · HikariOS 2.5",
+     "date": "2026-10-21T07:04:09Z",
+     "assets": [
+      {
+       "name": "HikariOS-2.5.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.5/HikariOS-2.5.apk",
+       "size": 136171,
+       "downloads": 1
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "v3.3",
+    "name": "HikariOS 3.2 — Поддержка в Настройках",
+    "notes": "HikariOS 3.2 — пункт «Поддержка».\n\nВ Настройках появилась карточка «Поддержка»: вопросы, баги и пожелания — в Telegram @Unqra",
+    "date": "2026-10-27T01:42:46Z",
+    "assets": [
+     {
+      "name": "HikariOS-3.2.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.3/HikariOS-3.2.apk",
+      "size": 149417,
+      "downloads": 1
+     }
+    ]
+   }
+  },
+  {
+   "title": "HIKARI store",
+   "cat": "tool",
+   "icon": "assets/icons/hikari.png",
+   "grad": [
+    "#5cb8e8",
+    "#2b5f8f"
+   ],
+   "desc": "Сам магазин как приложение: та же полка, обновления подтягиваются сами.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "v1.1",
+     "name": "HIKARI store v1.1",
+     "notes": "- новая иконка приложения\n- JetBrains Mono и рукописные подписи\n- сгенерированные иконки у всех приложений\n- микрозначки вместо эмодзи в кнопках и метках",
+     "date": "2026-11-03T14:31:02Z",
+     "assets": [
+      {
+       "name": "HikariStore-1.1.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.1/HikariStore-1.1.apk",
+       "size": 158884,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "v1.0",
+     "name": "Aika Market v1.0 — приложение",
+     "notes": "Первый APK магазина: каталог моих приложений и игр, поиск, версии, установка в один тап.\n\n- стиль в духе knice.tech: графит, стекло, белые кнопки\n- каталог из GitHub Releases, обновляется сам\n- работает оффлайн по кэшу",
+     "date": "2026-11-03T13:43:24Z",
+     "assets": [
+      {
+       "name": "AikaMarket-1.0.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.0/AikaMarket-1.0.apk",
+       "size": 106892,
+       "downloads": 1
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "v1.1",
+    "name": "HIKARI store v1.1",
+    "notes": "- новая иконка приложения\n- JetBrains Mono и рукописные подписи\n- сгенерированные иконки у всех приложений\n- микрозначки вместо эмодзи в кнопках и метках",
+    "date": "2026-11-03T14:31:02Z",
+    "assets": [
+     {
+      "name": "HikariStore-1.1.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.1/HikariStore-1.1.apk",
+      "size": 158884,
+      "downloads": 0
+     }
+    ]
+   }
   }
  ]
 }

@@ -3,23 +3,14 @@
 
 const API = 'https://api.github.com/repos';
 const OWNER = 'lucifermornngstar52-cell';
-const CACHE_KEY = 'aika_market_v1';
-const CACHE_TTL = 10 * 60 * 1000;
+const CACHE_KEY = 'hikari_catalog_v2';
+const CACHE_TTL = 5 * 60 * 1000;
 
 // ---------- каталог ----------
 // repo   — откуда тянуть релизы (пустая строка = только веб-ссылка)
 // cat    — game | app | tool | web
 // icon   — эмодзи, grad — градиент иконки
 const APPS = [
-  {
-    repo: 'aika-market',
-    title: 'HIKARI store',
-    cat: 'tool',
-    icon: 'assets/icons/hikari.png',
-    grad: ['#5cb8e8', '#2b5f8f'],
-    desc: 'Этот самый магазин, но как приложение: та же полка, тот же каталог, установка в один тап. Обновляется из самого себя.',
-    web: 'https://lucifermornngstar52-cell.github.io/aika-market/'
-  },
   {
     repo: 'aika-assistant',
     title: 'Aika Assistant',
@@ -34,8 +25,31 @@ const APPS = [
     cat: 'game',
     icon: 'assets/icons/numbra.png',
     grad: ['#ffc861', '#ff6b81'],
-    desc: 'Игра на углы между стрелками часов: четыре уровня сложности, тысячи вопросов, монеты и достижения. Плюс книга задач «Математика времени» в стиле Рика и Морти.',
-    web: 'https://lucifermornngstar52-cell.github.io/clock-angle-game/'
+    desc: 'Игра на углы между стрелками часов: четыре уровня сложности, тысячи вопросов, монеты и достижения. Плюс книга задач «Математика времени» в стиле Рика и Морти.'
+  },
+  {
+    repo: 'aika-world-app',
+    title: 'АЙКА МИР',
+    cat: 'app',
+    icon: 'assets/icons/aika-world.png',
+    grad: ['#4fd7ff', '#2b6bff'],
+    desc: 'Пиксельная деревня, которая живёт своей жизнью: процедурные жители, погода, циклы дня. Работает офлайн, интернет не нужен.'
+  },
+  {
+    repo: 'neon-strike',
+    title: 'NEON STRIKE',
+    cat: 'game',
+    icon: 'assets/icons/neon-strike.png',
+    grad: ['#ff2d95', '#7000ff'],
+    desc: 'Неоновый 3D-шутер на Three.js: город, стрельба, мобильное управление. Теперь как приложение — полный экран, без адресной строки.'
+  },
+  {
+    repo: 'zhol-driving-sim',
+    title: 'ЖОЛ — симулятор вождения',
+    cat: 'game',
+    icon: 'assets/icons/zhol.png',
+    grad: ['#5ef2d6', '#0f8f6b'],
+    desc: 'Симулятор вождения по правилам ПДД Казахстана: знаки, разметка, экзаменационные маршруты. Отдельным приложением, в полный экран.'
   },
   {
     repo: 'rustlite',
@@ -46,67 +60,28 @@ const APPS = [
     desc: 'Выживание на минималках: собирай, строй, держись подальше от чужих. Лёгкая сборка для слабых телефонов.'
   },
   {
-    repo: 'aika-world-app',
-    title: 'АЙКА МИР',
-    cat: 'app',
-    icon: 'assets/icons/aika-world.png',
-    grad: ['#4fd7ff', '#2b6bff'],
-    desc: 'Пиксельная деревня, которая живёт своей жизнью: процедурные жители, погода, циклы дня. APK-обёртка онлайн-мира.',
-    web: 'https://lucifermornngstar52-cell.github.io/aika-world/'
-  },
-  {
-    repo: '',
-    title: 'NEON STRIKE',
-    cat: 'game',
-    icon: 'assets/icons/neon-strike.png',
-    grad: ['#ff2d95', '#7000ff'],
-    desc: 'Браузерный 3D-шутер на Three.js: неоновый город, стрельба, мобильное управление. Открывается прямо в браузере, ставить ничего не надо.',
-    web: 'https://lucifermornngstar52-cell.github.io/neon-strike/'
-  },
-  {
-    repo: '',
-    title: 'ЖОЛ — симулятор вождения',
-    cat: 'game',
-    icon: 'assets/icons/zhol.png',
-    grad: ['#5ef2d6', '#0f8f6b'],
-    desc: 'Симулятор вождения по правилам ПДД Казахстана: знаки, разметка, экзаменационные маршруты.',
-    web: 'https://lucifermornngstar52-cell.github.io/zhol-driving-sim/'
-  },
-  {
-    repo: '',
-    title: 'PenkovBank',
-    cat: 'tool',
-    icon: 'assets/icons/penkovbank.png',
-    grad: ['#8ad4ff', '#2452ff'],
-    desc: 'Цифровой банк нового поколения: карты, переводы, интерфейс как у настоящего банка. Учебный проект.',
-    web: 'https://lucifermornngstar52-cell.github.io/penkov-bank/'
-  },
-  {
-    repo: '',
+    repo: 'nano-gpt',
     title: 'nanoGPT',
     cat: 'tool',
     icon: 'assets/icons/nanogpt.png',
     grad: ['#a06bff', '#4b1f8f'],
-    desc: 'GPT с нуля на чистом NumPy: 350 тысяч параметров, написан вручную, обучается прямо в браузере.',
-    web: 'https://lucifermornngstar52-cell.github.io/nano-gpt/'
+    desc: 'GPT с нуля на чистом NumPy: 350 тысяч параметров, написан вручную, обучается прямо на телефоне.'
   },
   {
-    repo: '',
-    title: 'История Новомихайловки',
-    cat: 'web',
-    icon: 'assets/icons/novomihaylovka.png',
-    grad: ['#e0b98a', '#8a5a2b'],
-    desc: 'История села Новомихайловка с 1895 по 2026 год: архивные материалы, фотографии, хронология.',
-    web: 'https://lucifermornngstar52-cell.github.io/novomihaylovka/'
-  },
-  {
-    repo: '',
+    repo: 'zik-os',
     title: 'ZikOS',
     cat: 'tool',
     icon: 'assets/icons/zikos.png',
     grad: ['#5ef2d6', '#0a6a7a'],
-    desc: 'Веб-операционная система в браузере: окна, приложения, рабочий стол.',
-    web: 'https://lucifermornngstar52-cell.github.io/zik-os/'
+    desc: 'Веб-операционная система: окна, приложения, рабочий стол. Собрана в отдельное приложение.'
+  },
+  {
+    repo: 'aika-market',
+    title: 'HIKARI store',
+    cat: 'tool',
+    icon: 'assets/icons/hikari.png',
+    grad: ['#5cb8e8', '#2b5f8f'],
+    desc: 'Сам магазин как приложение: та же полка, обновления подтягиваются сами.'
   }
 ];
 
@@ -219,7 +194,8 @@ async function loadLive() {
             name: x.name, url: x.browser_download_url, size: x.size, downloads: x.download_count || 0
           }))
         }));
-        entry.latest = entry.releases[0] || null;
+        const withApk = entry.releases.filter((r) => r.assets.some((a) => a.name.toLowerCase().endsWith('.apk')));
+        entry.latest = withApk[0] || entry.releases[0] || null;
       } catch (e) {
         entry.error = true;
       }
@@ -461,6 +437,8 @@ document.addEventListener('keydown', (e) => {
 // оффлайн-кэш каталога, чтобы магазин открывался даже без сети
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
+  // раз в сутки обновляем регистрацию, чтобы правки доезжали сразу
+  navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
 }
 
 loadCatalog(false);
