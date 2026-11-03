@@ -12,6 +12,15 @@ const CACHE_TTL = 10 * 60 * 1000;
 // icon   — эмодзи, grad — градиент иконки
 const APPS = [
   {
+    repo: 'aika-market',
+    title: 'Aika Market',
+    cat: 'tool',
+    icon: '✨',
+    grad: ['#5cb8e8', '#2b5f8f'],
+    desc: 'Этот самый магазин, но как приложение: та же полка, тот же каталог, установка в один тап. Обновляется из самого себя.',
+    web: 'https://lucifermornngstar52-cell.github.io/aika-market/'
+  },
+  {
     repo: 'aika-assistant',
     title: 'Aika Assistant',
     cat: 'app',
