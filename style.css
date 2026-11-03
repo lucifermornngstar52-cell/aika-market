@@ -568,53 +568,62 @@ svg { display: inline-block; }
   text-overflow: ellipsis;
 }
 
-/* ---------- кот-маскот: закреплён в правом нижнем углу ---------- */
+
+@media (max-width: 480px) {
+  .mascot { width: 84px; height: 84px; right: 10px; bottom: 10px; }
+  .mascot canvas { width: 70px; height: 65px; }
+  .mascot-note { font-size: 14px; top: -15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot { animation: none; }
+}
+
+/* ---------- кот-маскот: живёт в hero рядом с кнопками ---------- */
+.hero-buttons { align-items: center; }
+
 .mascot {
-  position: fixed;
-  right: 14px;
-  bottom: 14px;
-  z-index: 20;
+  position: relative;
+  margin-left: auto;
+  width: 122px;
+  height: 122px;
   display: grid;
   place-items: center;
-  width: 104px;
-  height: 104px;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 40%, rgba(92, 184, 232, 0.16), rgba(18, 18, 18, 0.72) 62%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  background: radial-gradient(circle at 50% 38%, rgba(92, 184, 232, 0.18), rgba(20, 20, 20, 0.85) 64%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.07);
   pointer-events: none;
-  animation: mascot-bob 3.4s ease-in-out infinite;
+  animation: mascot-bob 3.2s ease-in-out infinite;
 }
 
 .mascot canvas {
-  width: 88px;
-  height: 81px;
+  width: 96px;
+  height: 88px;
   image-rendering: pixelated;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.5));
 }
 
 .mascot-note {
   position: absolute;
-  top: -18px;
-  right: 4px;
+  top: -16px;
+  right: 6px;
   font-family: var(--hand);
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.42);
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.45);
   transform: rotate(-6deg);
   white-space: nowrap;
 }
 
 @keyframes mascot-bob {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+  50% { transform: translateY(-5px); }
 }
 
-/* на телефонах чуть меньше, чтобы не лез в контент */
 @media (max-width: 480px) {
-  .mascot { width: 84px; height: 84px; right: 10px; bottom: 10px; }
-  .mascot canvas { width: 70px; height: 65px; }
-  .mascot-note { font-size: 14px; top: -15px; }
+  .mascot { width: 100px; height: 100px; }
+  .mascot canvas { width: 80px; height: 73px; }
+  .mascot-note { font-size: 15px; top: -13px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

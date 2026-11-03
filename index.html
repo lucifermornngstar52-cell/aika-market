@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -86,6 +86,10 @@
     <div class="hero-buttons">
       <button class="btn light" id="toList"><svg class="ti"><use href="#i-spark"/></svg>открыть каталог</button>
       <button class="btn ghost" id="howto"><svg class="ti"><use href="#i-down"/></svg>как поставить</button>
+      <div class="mascot" aria-hidden="true">
+        <span class="mascot-note">это я</span>
+        <canvas id="mascot" width="104" height="96"></canvas>
+      </div>
     </div>
     <div class="stats">
       <div class="stat"><b id="stCount">—</b><span>штук на полке</span></div>
@@ -132,11 +136,8 @@
   <span class="hand-f">сделано ночью, с любовью</span>
 </footer>
 
-<div class="mascot" aria-hidden="true">
-  <span class="mascot-note">это я</span>
-  <canvas id="mascot" width="104" height="96"></canvas>
-</div>
 
-<script src="app.js?v=9"></script>
+
+<script src="app.js?v=10"></script>
 </body>
 </html>
