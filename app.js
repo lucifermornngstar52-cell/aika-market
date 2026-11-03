@@ -385,6 +385,34 @@ $('#chips').addEventListener('click', (e) => {
 
 $('#refresh').addEventListener('click', () => loadCatalog(true));
 
+$('#toList').addEventListener('click', () => {
+  document.querySelector('.shelf').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+function showInstallHelp() {
+  const card = $('#sheetCard');
+  card.innerHTML = `
+    <div class="sheet-head">
+      <div class="sheet-name">Как поставить приложение</div>
+    </div>
+    <p class="sheet-desc">
+      Магазин отдаёт обычные APK-файлы. Android по умолчанию не любит ставить их из браузера,
+      поэтому один раз нужно разрешить установку.
+    </p>
+    <div class="ver"><div class="ver-top"><b>1. Скачай</b></div>
+      <div class="ver-notes">Нажми «Скачать». Файл появится в загрузках, в шторке будет уведомление.</div></div>
+    <div class="ver"><div class="ver-top"><b>2. Разреши</b></div>
+      <div class="ver-notes">Android спросит про установку из неизвестных источников. Жми «Разрешить» и вернись назад.</div></div>
+    <div class="ver"><div class="ver-top"><b>3. Установи</b></div>
+      <div class="ver-notes">Открой файл в загрузках и нажми «Установить». Если играешь в браузере — устанавливать вообще не надо.</div></div>
+    <div class="hint">Обновление: скачиваешь новый APK из магазина и ставишь поверх, данные и настройки сохраняются.</div>
+  `;
+  $('#sheet').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+$('#howto').addEventListener('click', showInstallHelp);
+
 $('#sheet').addEventListener('click', (e) => {
   if (e.target.dataset.close !== undefined || e.target.classList.contains('sheet-backdrop')) closeSheet();
 });
