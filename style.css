@@ -569,22 +569,16 @@ svg { display: inline-block; }
 }
 
 
-@media (max-width: 480px) {
-  .mascot { width: 84px; height: 84px; right: 10px; bottom: 10px; }
-  .mascot canvas { width: 70px; height: 65px; }
-  .mascot-note { font-size: 14px; top: -15px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .mascot { animation: none; }
-}
-
 /* ---------- кот-маскот: рыжий спящий кот (анимированный WebP) ---------- */
 .hero-buttons { align-items: center; }
 
 .mascot {
   position: relative;
+  right: auto;
+  bottom: auto;
   margin-left: auto;
+  margin-right: 4px;
+  max-width: 100%;
   display: grid;
   place-items: center;
   pointer-events: none;
@@ -594,6 +588,7 @@ svg { display: inline-block; }
 .mascot img {
   display: block;
   width: 168px;
+  max-width: 100%;
   height: auto;
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.55));
 }
@@ -614,9 +609,15 @@ svg { display: inline-block; }
   50% { transform: translateY(-3px); }
 }
 
-@media (max-width: 480px) {
-  .mascot img { width: 132px; }
-  .mascot-note { font-size: 15px; top: -11px; }
+@media (max-width: 520px) {
+  .mascot {
+    flex: 0 0 100%;
+    margin: 4px 0 0;
+    justify-items: center;
+    padding-right: 0;
+  }
+  .mascot img { width: 150px; }
+  .mascot-note { font-size: 15px; top: -10px; right: calc(50% - 74px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

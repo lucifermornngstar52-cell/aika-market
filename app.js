@@ -351,14 +351,6 @@ function openSheet(a) {
     v.appendChild(el('div', 'ver-top',
       `<b>${r.tag}</b><span>${fmtDate(r.date)}${apkR ? ' · ' + fmtSize(apkR.size) : ''}</span>`));
     if (r.notes) v.appendChild(el('div', 'ver-notes', r.notes));
-    if (apkR) {
-      const g = el('button', 'get', `<svg class="ti"><use href="#i-down"/></svg>скачать · ${apkR.name}`);
-      g.addEventListener('click', () => {
-        window.location.href = apkR.url;
-        toast('Загрузка APK началась');
-      });
-      v.appendChild(g);
-    }
     card.appendChild(v);
   }
 
