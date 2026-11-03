@@ -1,0 +1,616 @@
+{
+ "generated": "2026-11-03T13:44:16.507Z",
+ "items": [
+  {
+   "title": "Aika Market",
+   "cat": "tool",
+   "icon": "✨",
+   "grad": [
+    "#5cb8e8",
+    "#2b5f8f"
+   ],
+   "desc": "Этот самый магазин, но как приложение: та же полка, тот же каталог, установка в один тап.",
+   "web": "https://lucifermornngstar52-cell.github.io/aika-market/",
+   "releases": [
+    {
+     "tag": "v1.0",
+     "name": "Aika Market v1.0 — приложение",
+     "notes": "Первый APK магазина: каталог моих приложений и игр, поиск, версии, установка в один тап.\n\n- стиль в духе knice.tech: графит, стекло, белые кнопки\n- каталог из GitHub Releases, обновляется сам\n- работает оффлайн по кэшу",
+     "date": "2026-11-03T13:43:24Z",
+     "assets": [
+      {
+       "name": "AikaMarket-1.0.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.0/AikaMarket-1.0.apk",
+       "size": 106892,
+       "downloads": 0
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "v1.0",
+    "name": "Aika Market v1.0 — приложение",
+    "notes": "Первый APK магазина: каталог моих приложений и игр, поиск, версии, установка в один тап.\n\n- стиль в духе knice.tech: графит, стекло, белые кнопки\n- каталог из GitHub Releases, обновляется сам\n- работает оффлайн по кэшу",
+    "date": "2026-11-03T13:43:24Z",
+    "assets": [
+     {
+      "name": "AikaMarket-1.0.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.0/AikaMarket-1.0.apk",
+      "size": 106892,
+      "downloads": 0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Aika Assistant",
+   "cat": "app",
+   "icon": "🌸",
+   "grad": [
+    "#5ef2d6",
+    "#a06bff"
+   ],
+   "desc": "Моя Айка: голосовой ассистент с Live2D и 3D-аватаром, управлением телефоном через AccessibilityService, чтением уведомлений и умными ответами. Gemini 2.0 Flash и GPT-4o внутри.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "build-1432",
+     "name": "Aivora — build-1432",
+     "notes": "Триал 4 дня + покупка полной версии за 1 000 ₸. Version Code поднят до 1432 для RuStore.",
+     "date": "2026-10-11T07:44:45Z",
+     "assets": [
+      {
+       "name": "aivora-build-1432.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1432/aivora-build-1432.apk",
+       "size": 141978878,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "build-1430",
+     "name": "Aivora — build-1430",
+     "notes": "4 пробных дня бесплатно, дальше покупка полной версии за 1 000 ₸ (Kaspi/Freedom, код AK-XXXXXX привязан к устройству, офлайн-проверка). Статус триала в настройках.",
+     "date": "2026-10-10T18:09:56Z",
+     "assets": [
+      {
+       "name": "aivora-build-1430.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1430/aivora-build-1430.apk",
+       "size": 141978874,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1428",
+     "name": "Aivora — build-1428",
+     "notes": "Новая иконка приложения — настоящий портрет Айки. Плюс всё из build-1424 (вейк ворд on-device, без лишнего стриминга в Google).",
+     "date": "2026-10-05T04:33:17Z",
+     "assets": [
+      {
+       "name": "aivora-build-1428.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1428/aivora-build-1428.apk",
+       "size": 141896798,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1424",
+     "name": "Aivora — build-1424",
+     "notes": "Вейк ворд больше не душит систему: распознавание on-device (без вечного стриминга аудио в Google), финальные результаты без спама колбеками, лёгкий цикл. Плюс всё из 1422 (дым 4fps, Live2D 24fps, accessibility кэш, пауза оверлея на гашении экрана)",
+     "date": "2026-10-04T11:36:58Z",
+     "assets": [
+      {
+       "name": "aivora-build-1424.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1424/aivora-build-1424.apk",
+       "size": 141895798,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1422",
+     "name": "build-1422",
+     "notes": "Анти-лаг, часть 2 (включая неочевидное): SmokeBackground 60fps→4fps (~15x меньше GPU за каждым экраном); Live2D оверлей 60→24fps без antialias; accessibility-сервис больше не дёргает PackageManager IPC на каждое событие смены окна (кэш пакетов); WebView оверлея гаснет при выключенном экране; + фиксы билда 1419 (LLM не занимает все ядра, эмоции не в пути отправки)",
+     "date": "2026-10-04T11:23:44Z",
+     "assets": [
+      {
+       "name": "aivora-build-1422.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1422/aivora-build-1422.apk",
+       "size": 141895798,
+       "downloads": 1
+      }
+     ]
+    },
+    {
+     "tag": "build-1419",
+     "name": "Aivora — build-1419",
+     "notes": "Лечение зависаний: LLM больше не занимает все ядра (кэп 4 потока, UI всегда живой); контекст 4096→2048 (меньше RAM); анализ эмоций убран из пути отправки сообщения → редкий фоновый цикл раз в 15 минут",
+     "date": "2026-10-04T10:53:08Z",
+     "assets": [
+      {
+       "name": "aivora-build-1419.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1419/aivora-build-1419.apk",
+       "size": 141895670,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1416",
+     "name": "Aivora — build-1416",
+     "notes": "Логи полностью вырезаны (сервис, экран, плавающая кнопка, no-op debugPrint); R8-сжатие релиза — APK легче; phone-state слушатель удалён",
+     "date": "2026-10-04T03:24:30Z",
+     "assets": [
+      {
+       "name": "aivora-build-1416.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1416/aivora-build-1416.apk",
+       "size": 141895670,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1413",
+     "name": "Aivora — build-1413",
+     "notes": "Алиасы приложений работают в чате и без триггер-слов; Qwen3 без размышлений (/no_think) — чат отвечает в разы быстрее; история локалки 10 реплик",
+     "date": "2026-10-04T01:50:56Z",
+     "assets": [
+      {
+       "name": "aivora-build-1413.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1413/aivora-build-1413.apk",
+       "size": 146774441,
+       "downloads": 0
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "build-1432",
+    "name": "Aivora — build-1432",
+    "notes": "Триал 4 дня + покупка полной версии за 1 000 ₸. Version Code поднят до 1432 для RuStore.",
+    "date": "2026-10-11T07:44:45Z",
+    "assets": [
+     {
+      "name": "aivora-build-1432.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1432/aivora-build-1432.apk",
+      "size": 141978878,
+      "downloads": 1
+     }
+    ]
+   }
+  },
+  {
+   "title": "Numbra",
+   "cat": "game",
+   "icon": "🕰️",
+   "grad": [
+    "#ffc861",
+    "#ff6b81"
+   ],
+   "desc": "Игра на углы между стрелками часов: четыре уровня сложности, тысячи вопросов, монеты и достижения. Плюс книга задач «Математика времени» в стиле Рика и Морти.",
+   "web": "https://lucifermornngstar52-cell.github.io/clock-angle-game/",
+   "releases": [
+    {
+     "tag": "numbra-release",
+     "name": "Numbra Release v1.26",
+     "notes": "Релизная сборка Numbra — подписанный APK (alias: numbra).",
+     "date": "2026-10-05T07:00:14Z",
+     "assets": [
+      {
+       "name": "numbra-release.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/clock-angle-game/releases/download/numbra-release/numbra-release.apk",
+       "size": 11711628,
+       "downloads": 2
+      }
+     ]
+    },
+    {
+     "tag": "v29",
+     "name": "Numbra v29 — подсказки во всех играх",
+     "notes": "Новое:\n- Маленькая плавающая кнопка 💡 с подсказками в каждой игре — общий инвентарь для всего приложения\n- Подсказки работают там, где они реально нужны: основная игра (компактная кнопка), «Властелины времени» (обычные вопросы и экзамен), мини-игры с текстовыми вопросами (8, 9, 10), «Хранители Времени» (боевые и финальные вопросы)\n- Кнопка подсвечивает правильный ответ и тратит одну подсказку из общего запаса; счётчик виден прямо на кнопке",
+     "date": "2026-09-25T09:17:08Z",
+     "assets": [
+      {
+       "name": "clock-angle-game-v29.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/clock-angle-game/releases/download/v29/clock-angle-game-v29.apk",
+       "size": 5092600,
+       "downloads": 5
+      },
+      {
+       "name": "clock-angle-game-v29.exe",
+       "url": "https://github.com/lucifermornngstar52-cell/clock-angle-game/releases/download/v29/clock-angle-game-v29.exe",
+       "size": 70847556,
+       "downloads": 0
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "numbra-release",
+    "name": "Numbra Release v1.26",
+    "notes": "Релизная сборка Numbra — подписанный APK (alias: numbra).",
+    "date": "2026-10-05T07:00:14Z",
+    "assets": [
+     {
+      "name": "numbra-release.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/clock-angle-game/releases/download/numbra-release/numbra-release.apk",
+      "size": 11711628,
+      "downloads": 2
+     }
+    ]
+   }
+  },
+  {
+   "title": "Rust Lite",
+   "cat": "game",
+   "icon": "🔩",
+   "grad": [
+    "#c98b5e",
+    "#7a4a2a"
+   ],
+   "desc": "Выживание на минималках: собирай, строй, держись подальше от чужих. Лёгкая сборка для слабых телефонов.",
+   "web": "",
+   "releases": [
+    {
+     "tag": "v8",
+     "name": "Rust Lite v8 — поддержка в игре",
+     "notes": "Пункт Поддержка в меню: Telegram @Unqra",
+     "date": "2026-10-27T01:38:43Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
+       "size": 286296,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v7",
+     "name": "Rust Lite v7 — обновление игры",
+     "notes": "Новая версия выживания: ресурсы, база, охота, ночь.",
+     "date": "2026-10-27T01:35:17Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v7/RustLite.apk",
+       "size": 286207,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "v6",
+     "name": "Rust Lite v6 — творческий режим, кнопка «бросить» в инвентаре",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-20T10:01:44Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v6/RustLite.apk",
+       "size": 290336,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v5",
+     "name": "Rust Lite v5 — размер выбранной кнопки и прочие обновления игры",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-20T02:08:41Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v5/RustLite.apk",
+       "size": 287610,
+       "downloads": 4
+      }
+     ]
+    },
+    {
+     "tag": "v4",
+     "name": "Rust Lite v4 — Three.js вшит в APK, игра работает офлайн",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T14:41:37Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v4/RustLite.apk",
+       "size": 281790,
+       "downloads": 4
+      }
+     ]
+    },
+    {
+     "tag": "v3",
+     "name": "Rust Lite v3 — обновление игры (настройки кнопок, яркость, авто-качество)",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T14:22:22Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v3/RustLite.apk",
+       "size": 100137,
+       "downloads": 4
+      }
+     ]
+    },
+    {
+     "tag": "v2",
+     "name": "Rust Lite v2 (совместимость со старыми WebView)",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T13:25:36Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v2/RustLite.apk",
+       "size": 93698,
+       "downloads": 5
+      }
+     ]
+    },
+    {
+     "tag": "v1",
+     "name": "Rust Lite v1",
+     "notes": "Выживание: ресурсы, база, охота, ночь. Собрано из артефекта Claude.",
+     "date": "2026-10-19T11:33:05Z",
+     "assets": [
+      {
+       "name": "RustLite.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v1/RustLite.apk",
+       "size": 88829,
+       "downloads": 9
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "v8",
+    "name": "Rust Lite v8 — поддержка в игре",
+    "notes": "Пункт Поддержка в меню: Telegram @Unqra",
+    "date": "2026-10-27T01:38:43Z",
+    "assets": [
+     {
+      "name": "RustLite.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
+      "size": 286296,
+      "downloads": 3
+     }
+    ]
+   }
+  },
+  {
+   "title": "АЙКА МИР",
+   "cat": "app",
+   "icon": "🌍",
+   "grad": [
+    "#4fd7ff",
+    "#2b6bff"
+   ],
+   "desc": "Пиксельная деревня, которая живёт своей жизнью: процедурные жители, погода, циклы дня. APK-обёртка онлайн-мира.",
+   "web": "https://lucifermornngstar52-cell.github.io/aika-world/",
+   "releases": [
+    {
+     "tag": "v1.0.23",
+     "name": "v1.0.23",
+     "notes": "",
+     "date": "2026-09-16T06:48:09Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.23/aika-world.apk",
+       "size": 104823,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.22",
+     "name": "v1.0.22",
+     "notes": "",
+     "date": "2026-09-16T06:37:10Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.22/aika-world.apk",
+       "size": 103487,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.21",
+     "name": "v1.0.21",
+     "notes": "",
+     "date": "2026-09-16T06:32:01Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.21/aika-world.apk",
+       "size": 103155,
+       "downloads": 2
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.20",
+     "name": "v1.0.20",
+     "notes": "",
+     "date": "2026-09-16T04:14:30Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.20/aika-world.apk",
+       "size": 102279,
+       "downloads": 5
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.19",
+     "name": "v1.0.19",
+     "notes": "",
+     "date": "2026-09-16T04:11:18Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.19/aika-world.apk",
+       "size": 100091,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.18",
+     "name": "v1.0.18",
+     "notes": "",
+     "date": "2026-09-16T03:52:38Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.18/aika-world.apk",
+       "size": 99271,
+       "downloads": 2
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.17",
+     "name": "v1.0.17",
+     "notes": "",
+     "date": "2026-09-16T03:47:51Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.17/aika-world.apk",
+       "size": 98391,
+       "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.16",
+     "name": "v1.0.16",
+     "notes": "",
+     "date": "2026-09-16T03:40:53Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.16/aika-world.apk",
+       "size": 96755,
+       "downloads": 2
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.15",
+     "name": "v1.0.15",
+     "notes": "",
+     "date": "2026-09-16T03:32:12Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.15/aika-world.apk",
+       "size": 95623,
+       "downloads": 3
+      }
+     ]
+    }
+   ],
+   "latest": {
+    "tag": "v1.0.23",
+    "name": "v1.0.23",
+    "notes": "",
+    "date": "2026-09-16T06:48:09Z",
+    "assets": [
+     {
+      "name": "aika-world.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.23/aika-world.apk",
+      "size": 104823,
+      "downloads": 3
+     }
+    ]
+   }
+  },
+  {
+   "title": "NEON STRIKE",
+   "cat": "game",
+   "icon": "🔫",
+   "grad": [
+    "#ff2d95",
+    "#7000ff"
+   ],
+   "desc": "Браузерный 3D-шутер на Three.js: неоновый город, стрельба, мобильное управление. Открывается прямо в браузере.",
+   "web": "https://lucifermornngstar52-cell.github.io/neon-strike/",
+   "releases": [],
+   "latest": null
+  },
+  {
+   "title": "ЖОЛ — симулятор вождения",
+   "cat": "game",
+   "icon": "🚗",
+   "grad": [
+    "#5ef2d6",
+    "#0f8f6b"
+   ],
+   "desc": "Симулятор вождения по правилам ПДД Казахстана: знаки, разметка, экзаменационные маршруты.",
+   "web": "https://lucifermornngstar52-cell.github.io/zhol-driving-sim/",
+   "releases": [],
+   "latest": null
+  },
+  {
+   "title": "PenkovBank",
+   "cat": "tool",
+   "icon": "🏦",
+   "grad": [
+    "#8ad4ff",
+    "#2452ff"
+   ],
+   "desc": "Цифровой банк нового поколения: карты, переводы, интерфейс как у настоящего банка.",
+   "web": "https://lucifermornngstar52-cell.github.io/penkov-bank/",
+   "releases": [],
+   "latest": null
+  },
+  {
+   "title": "nanoGPT",
+   "cat": "tool",
+   "icon": "🧠",
+   "grad": [
+    "#a06bff",
+    "#4b1f8f"
+   ],
+   "desc": "GPT с нуля на чистом NumPy: 350 тысяч параметров, написан вручную, обучается прямо в браузере.",
+   "web": "https://lucifermornngstar52-cell.github.io/nano-gpt/",
+   "releases": [],
+   "latest": null
+  },
+  {
+   "title": "История Новомихайловки",
+   "cat": "web",
+   "icon": "📖",
+   "grad": [
+    "#e0b98a",
+    "#8a5a2b"
+   ],
+   "desc": "История села Новомихайловка с 1895 по 2026 год: архивные материалы, фотографии, хронология.",
+   "web": "https://lucifermornngstar52-cell.github.io/novomihaylovka/",
+   "releases": [],
+   "latest": null
+  },
+  {
+   "title": "ZikOS",
+   "cat": "tool",
+   "icon": "💻",
+   "grad": [
+    "#5ef2d6",
+    "#0a6a7a"
+   ],
+   "desc": "Веб-операционная система в браузере: окна, приложения, рабочий стол.",
+   "web": "https://lucifermornngstar52-cell.github.io/zik-os/",
+   "releases": [],
+   "latest": null
+  }
+ ]
+}

@@ -163,50 +163,70 @@ async function fetchReleases(repo) {
 }
 
 async function loadCatalog(force) {
-  $('#refresh').classList.add('spin');
+  const btn = $('#refresh');
+  btn.classList.add('spin');
   try {
     const cached = !force && JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
-    if (cached && Date.now() - cached.ts < CACHE_TTL && Array.isArray(cached.items)) {
+    if (cached && Date.now() - cached.ts < CACHE_TTL && Array.isArray(cached.items) && cached.items.length) {
       catalog = cached.items;
       render();
-      $('#refresh').classList.remove('spin');
       return;
     }
 
-    const result = [];
-    await Promise.all(APPS.map(async (a) => {
-      const entry = {
-        title: a.title, cat: a.cat, icon: a.icon, grad: a.grad,
-        desc: a.desc, web: a.web || '', releases: [], latest: null
-      };
-      if (a.repo) {
-        try {
-          const rels = (await fetchReleases(a.repo)).filter((r) => !r.draft);
-          entry.releases = rels.map((r) => ({
-            tag: r.tag_name,
-            name: r.name || r.tag_name,
-            notes: (r.body || '').trim(),
-            date: r.published_at,
-            assets: (r.assets || []).map((x) => ({
-              name: x.name, url: x.browser_download_url, size: x.size, downloads: x.download_count || 0
-            }))
-          }));
-          entry.latest = entry.releases[0] || null;
-        } catch (e) {
-          entry.error = true;
-        }
+    // основной путь: готовый catalog.json (его обновляет GitHub Action, лимитов API нет)
+    let items = null;
+    try {
+      const r = await fetch('catalog.json', { cache: 'no-store' });
+      if (r.ok) {
+        const j = await r.json();
+        if (Array.isArray(j.items) && j.items.length) items = j.items;
       }
-      result.push(entry);
-    }));
+    } catch (e) {}
 
-    catalog = result.filter((a) => a.latest || a.web);
-    localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), items: catalog }));
-    render();
+    // запасной путь: напрямую из API GitHub
+    if (!items) items = await loadLive();
+
+    if (items && items.length) {
+      catalog = items;
+      localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), items: catalog }));
+      render();
+    } else {
+      toast('Каталог пуст, попробуй позже');
+    }
   } catch (e) {
     toast('Не удалось обновить каталог');
   } finally {
-    $('#refresh').classList.remove('spin');
+    btn.classList.remove('spin');
   }
+}
+
+async function loadLive() {
+  const result = [];
+  await Promise.all(APPS.map(async (a) => {
+    const entry = {
+      title: a.title, cat: a.cat, icon: a.icon, grad: a.grad,
+      desc: a.desc, web: a.web || '', releases: [], latest: null
+    };
+    if (a.repo) {
+      try {
+        const rels = (await fetchReleases(a.repo)).filter((r) => !r.draft);
+        entry.releases = rels.map((r) => ({
+          tag: r.tag_name,
+          name: r.name || r.tag_name,
+          notes: (r.body || '').trim(),
+          date: r.published_at,
+          assets: (r.assets || []).map((x) => ({
+            name: x.name, url: x.browser_download_url, size: x.size, downloads: x.download_count || 0
+          }))
+        }));
+        entry.latest = entry.releases[0] || null;
+      } catch (e) {
+        entry.error = true;
+      }
+    }
+    result.push(entry);
+  }));
+  return result.filter((a) => a.latest || a.web);
 }
 
 // ---------- отрисовка ----------
