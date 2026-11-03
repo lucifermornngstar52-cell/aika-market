@@ -568,6 +568,9 @@ svg { display: inline-block; }
 }
 
 .card-file {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   margin-top: 5px;
   font-size: 9px;
   letter-spacing: 0.3px;

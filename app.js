@@ -266,7 +266,7 @@ function render() {
       meta.appendChild(el('span', 'm-item', `<svg class="mi"><use href="#i-size"/></svg>${fmtSize(apk.size)}`));
     }
     main.appendChild(meta);
-    if (apk) main.appendChild(el('div', 'card-file', '📦 ' + apk.name));
+    if (apk) main.appendChild(el('div', 'card-file', `<svg class="mi"><use href="#i-file"/></svg>${apk.name}`));
     card.appendChild(main);
 
     const btn = el('button', 'get',
