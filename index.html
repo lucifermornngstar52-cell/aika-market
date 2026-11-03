@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -88,7 +88,10 @@
       <button class="btn ghost" id="howto"><svg class="ti"><use href="#i-down"/></svg>как поставить</button>
       <div class="mascot" aria-hidden="true">
         <span class="mascot-note">это я</span>
-        <canvas id="mascot" width="104" height="96"></canvas>
+        <picture>
+          <source srcset="assets/cat-still.png" media="(prefers-reduced-motion: reduce)">
+          <img id="mascot" src="assets/cat.webp" alt="" width="240" height="130" decoding="async">
+        </picture>
       </div>
     </div>
     <div class="stats">
@@ -138,6 +141,6 @@
 
 
 
-<script src="app.js?v=11"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>
