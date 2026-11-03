@@ -554,19 +554,7 @@ svg { display: inline-block; }
 
 .sprite, .icon img { user-select: none; }
 
-/* ---------- пиксельный кот в фоне ---------- */
-#pet {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  image-rendering: pixelated;
-  opacity: 0.62;
-  pointer-events: none;
-  will-change: transform;
-  filter: drop-shadow(0 0 8px rgba(92, 184, 232, 0.35));
-  transition: opacity 0.35s;
-}
-
+/* ---------- имя apk-файла ---------- */
 .card-file {
   display: flex;
   align-items: center;
@@ -578,4 +566,57 @@ svg { display: inline-block; }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ---------- кот-маскот: закреплён в правом нижнем углу ---------- */
+.mascot {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, rgba(92, 184, 232, 0.16), rgba(18, 18, 18, 0.72) 62%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+  animation: mascot-bob 3.4s ease-in-out infinite;
+}
+
+.mascot canvas {
+  width: 88px;
+  height: 81px;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+}
+
+.mascot-note {
+  position: absolute;
+  top: -18px;
+  right: 4px;
+  font-family: var(--hand);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.42);
+  transform: rotate(-6deg);
+  white-space: nowrap;
+}
+
+@keyframes mascot-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* на телефонах чуть меньше, чтобы не лез в контент */
+@media (max-width: 480px) {
+  .mascot { width: 84px; height: 84px; right: 10px; bottom: 10px; }
+  .mascot canvas { width: 70px; height: 65px; }
+  .mascot-note { font-size: 14px; top: -15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot { animation: none; }
 }

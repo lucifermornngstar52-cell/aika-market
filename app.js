@@ -339,28 +339,27 @@ function openSheet(a) {
     facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-size"/></svg>размер</span><b>${fmtSize(apk ? apk.size : 0)}</b>`));
     facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-down"/></svg>скачиваний</span><b>${a.releases[0].assets.reduce((s, x) => s + x.downloads, 0)}</b>`));
     facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-refresh"/></svg>обновлено</span><b>${fmtDate(a.latest.date)}</b>`));
-    facts.appendChild(el('div', 'fact', `<span><svg class="fi"><use href="#i-all"/></svg>версий</span><b>${a.releases.length}</b>`));
+
     card.appendChild(facts);
   }
 
   if (a.releases.length) {
-    card.appendChild(el('div', 'sect', 'Версии'));
-    a.releases.slice(0, 6).forEach((r, i) => {
-      const v = el('div', 'ver');
-      const apkR = apkOf(r);
-      v.appendChild(el('div', 'ver-top',
-        `<b>${r.tag}${i === 0 ? ' · актуальная' : ''}</b><span>${fmtDate(r.date)}${apkR ? ' · ' + fmtSize(apkR.size) : ''}</span>`));
-      if (r.notes) v.appendChild(el('div', 'ver-notes', r.notes));
-      if (apkR) {
-        const g = el('button', 'get', `<svg class="ti"><use href="#i-down"/></svg>скачать ${r.tag}`);
-        g.addEventListener('click', () => {
-          window.location.href = apkR.url;
-          toast('Загрузка APK началась');
-        });
-        v.appendChild(g);
-      }
-      card.appendChild(v);
-    });
+    card.appendChild(el('div', 'sect', 'актуальная версия'));
+    const r = a.latest;
+    const v = el('div', 'ver');
+    const apkR = apkOf(r);
+    v.appendChild(el('div', 'ver-top',
+      `<b>${r.tag}</b><span>${fmtDate(r.date)}${apkR ? ' · ' + fmtSize(apkR.size) : ''}</span>`));
+    if (r.notes) v.appendChild(el('div', 'ver-notes', r.notes));
+    if (apkR) {
+      const g = el('button', 'get', `<svg class="ti"><use href="#i-down"/></svg>скачать · ${apkR.name}`);
+      g.addEventListener('click', () => {
+        window.location.href = apkR.url;
+        toast('Загрузка APK началась');
+      });
+      v.appendChild(g);
+    }
+    card.appendChild(v);
   }
 
   card.appendChild(el('div', 'hint',
@@ -444,132 +443,169 @@ if ('serviceWorker' in navigator) {
 
 loadCatalog(false);
 
-// ---------- пиксельный кот: гуляет в фоне, ничего не перекрывает ----------
-(function pet() {
-  const cv = document.getElementById('pet');
+// ---------- пиксельный кот: лицо магазина, закреплён в углу ----------
+(function mascot() {
+  const cv = document.getElementById('mascot');
   if (!cv || !cv.getContext) return;
   const ctx = cv.getContext('2d');
-  const PX = 3, W = 17, H = 12;
-  cv.width = W * PX;
-  cv.height = H * PX;
+  const G = 4, W = 26, H = 24;
+  cv.width = W * G;
+  cv.height = H * G;
 
-  const C = { o: '#0c0c0c', b: '#f4ebd9', p: '#ff9ec4', e: '#141414', s: 'rgba(0,0,0,0.35)' };
-
-  const F = {
-    walk1: [
-      '....oo......oo...',
-      '...oboo....oobo..',
-      '...obbbbbbbbbbo..',
-      '..obbbbbbbbbbbbo.',
-      '.obbebbbbbbebbbo.',
-      '.obbbbbppbbbbbbo.',
-      '.obbbbbbbbbbbbbo.',
-      '..obbbbbbbbbbbo..',
-      '..obbbbbbbbbbbo..',
-      '...oo.ooo.ooo....',
-      '...o...o...o.....',
-      '.................'
-    ],
-    walk2: [
-      '....oo......oo...',
-      '...oboo....oobo..',
-      '...obbbbbbbbbbo..',
-      '..obbbbbbbbbbbbo.',
-      '.obbebbbbbbebbbo.',
-      '.obbbbbppbbbbbbo.',
-      '.obbbbbbbbbbbbbo.',
-      '..obbbbbbbbbbbo..',
-      '..obbbbbbbbbbbo..',
-      '..oo.ooo...ooo...',
-      '..o....o....o....',
-      '.................'
-    ],
-    sit: [
-      '.................',
-      '....oo......oo...',
-      '...oboo....oobo..',
-      '...obbbbbbbbbbo..',
-      '..obbbbbbbbbbbbo.',
-      '.obbebbbbbbebbbo.',
-      '.obbbbbppbbbbbbo.',
-      '.obbbbbbbbbbbbbo.',
-      '..obbbbbbbbbbbbo.',
-      '..oobbbbbbbbooo..',
-      '...oooooooooo....',
-      '.................'
-    ]
+  const COL = {
+    o: '#100e17',   // контур
+    f: '#f8f1e4',   // шерсть
+    p: '#ff9dc0',   // розовый
+    e: '#211a30',   // глаз
+    w: '#ffffff',   // блик
+    b: '#ffb3c9'    // румянец
   };
 
-  function draw(name, flip) {
-    const rows = F[name] || F.walk1;
-    ctx.clearRect(0, 0, cv.width, cv.height);
-    ctx.save();
-    if (flip) {
-      ctx.translate(cv.width, 0);
-      ctx.scale(-1, 1);
-    }
-    // тень
-    ctx.fillStyle = C.s;
-    ctx.fillRect(3 * PX, 11 * PX, 11 * PX, PX);
-    for (let y = 0; y < rows.length; y++) {
-      const line = rows[y] || '';
-      for (let x = 0; x < W; x++) {
-        const ch = line[x];
-        if (!ch || ch === '.' || !C[ch]) continue;
-        ctx.fillStyle = C[ch];
-        ctx.fillRect(x * PX, y * PX, PX, PX);
+  let grid;
+
+  const set = (x, y, c) => {
+    if (x >= 0 && x < W && y >= 0 && y < H) grid[y][x] = c;
+  };
+  const rect = (x, y, w, h, c) => {
+    for (let j = 0; j < h; j++) for (let i = 0; i < w; i++) set(x + i, y + j, c);
+  };
+  const round = (x, y, w, h, r, c) => {
+    for (let j = 0; j < h; j++) {
+      for (let i = 0; i < w; i++) {
+        const cx = i < r ? r - i : (i > w - 1 - r ? i - (w - 1 - r) : 0);
+        const cy = j < r ? r - j : (j > h - 1 - r ? j - (h - 1 - r) : 0);
+        if (cx * cx + cy * cy <= r * r + r * 0.6) set(x + i, y + j, c);
       }
     }
-    ctx.restore();
+  };
+
+  function build(d) {
+    grid = Array.from({ length: H }, () => Array(W).fill('.'));
+    const sway = d.tail;   // -1 / 0 / 1
+    const ear = d.ear;     // 0 / 1 (поднято)
+
+    // хвост
+    rect(18 + sway, 19, 2, 2, 'f');
+    rect(19 + sway, 18, 2, 2, 'f');
+    rect(21 + sway, 17, 2, 2, 'f');
+    rect(22 + sway, 15, 2, 3, 'f');
+
+    // тело
+    round(8, 13, 10, 9, 3, 'f');
+    // лапки
+    rect(9, 20, 3, 3, 'f');
+    rect(14, 20, 3, 3, 'f');
+    rect(10, 21, 1, 2, 'p');
+    rect(15, 21, 1, 2, 'p');
+
+    // уши
+    rect(7, 1 - ear, 2, 2, 'f');
+    rect(6, 2 - ear, 4, 2, 'f');
+    rect(5, 3 - ear, 6, 2, 'f');
+    rect(17, 1 - ear, 2, 2, 'f');
+    rect(16, 2 - ear, 4, 2, 'f');
+    rect(15, 3 - ear, 6, 2, 'f');
+    // розовая подкладка ушей
+    rect(7, 2 - ear, 2, 1, 'p');
+    rect(6, 3 - ear, 3, 1, 'p');
+    rect(17, 2 - ear, 2, 1, 'p');
+    rect(16, 3 - ear, 3, 1, 'p');
+
+    // голова
+    round(5, 4, 16, 12, 4, 'f');
+
+    // глаза
+    if (d.blink) {
+      rect(9, 9, 2, 1, 'e');
+      rect(15, 9, 2, 1, 'e');
+    } else {
+      rect(9, 8, 2, 3, 'e');
+      rect(15, 8, 2, 3, 'e');
+      rect(9, 8, 1, 1, 'w');
+      rect(15, 8, 1, 1, 'w');
+    }
+
+    // румянец, нос, рот
+    rect(7, 11, 2, 1, 'b');
+    rect(17, 11, 2, 1, 'b');
+    rect(12, 11, 2, 1, 'p');
+    rect(12, 12, 1, 1, 'o');
+    rect(13, 12, 1, 1, 'o');
+
+    // усы
+    rect(1, 10, 3, 1, 'o');
+    rect(2, 12, 2, 1, 'o');
+    rect(22, 10, 3, 1, 'o');
+    rect(22, 12, 2, 1, 'o');
+
+    // контур по краю: любая клетка, рядом с которой пусто
+    const copy = grid.map((r) => r.slice());
+    for (let y = 0; y < H; y++) {
+      for (let x = 0; x < W; x++) {
+        if (copy[y][x] === '.') continue;
+        const n = [
+          copy[y - 1] && copy[y - 1][x],
+          copy[y + 1] && copy[y + 1][x],
+          copy[y][x - 1],
+          copy[y][x + 1]
+        ];
+        if (n.some((v) => v === '.' || v === undefined)) grid[y][x] = 'o';
+      }
+    }
+  }
+
+  function render() {
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    for (let y = 0; y < H; y++) {
+      for (let x = 0; x < W; x++) {
+        const c = COL[grid[y][x]];
+        if (!c) continue;
+        ctx.fillStyle = c;
+        ctx.fillRect(x * G, y * G, G, G);
+      }
+    }
   }
 
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let x = 24, dir = 1, speed = 24, paused = true, pauseUntil = performance.now() + 1600, frame = 0, lastFlip = 0;
-  const sheet = document.getElementById('sheet');
+  const state = { blink: false, ear: 0, tail: 0 };
 
-  function tick(now) {
-    const w = window.innerWidth;
-    const maxX = Math.max(40, w - cv.width - 16);
-
-    if (paused) {
-      if (now >= pauseUntil) {
-        paused = false;
-        dir = Math.random() < 0.5 ? -1 : 1;
-        speed = 20 + Math.random() * 16;
-      }
-    } else {
-      x += dir * speed * 0.016;
-      if (x < 8) { x = 8; dir = 1; }
-      if (x > maxX) { x = maxX; dir = -1; }
-      if (Math.random() < 0.0035) {
-        paused = true;
-        pauseUntil = now + 1500 + Math.random() * 3200;
-      }
-    }
-
-    cv.style.transform = 'translateX(' + x.toFixed(1) + 'px)';
-    cv.style.opacity = sheet && !sheet.classList.contains('hidden') ? '0' : '0.62';
-
-    const walking = !paused;
-    const f = walking ? (Math.floor(now / 220) % 2 === 0 ? 'walk1' : 'walk2') : 'sit';
-    if (f !== frame) {
-      frame = f;
-      draw(f, dir < 0);
-    } else if (dir < 0 && lastFlip !== dir) {
-      lastFlip = dir;
-      draw(f, true);
-    } else if (dir > 0 && lastFlip !== dir) {
-      lastFlip = dir;
-      draw(f, false);
-    }
-
-    requestAnimationFrame(tick);
+  function draw() {
+    build(state);
+    render();
   }
 
   if (reduce) {
-    draw('sit', false);
-    cv.style.opacity = '0.5';
+    draw();
     return;
   }
-  requestAnimationFrame(tick);
+
+  let t = 0;
+  let nextBlink = 2600, nextEar = 1600, nextTail = 900;
+  let blinkUntil = 0, earUntil = 0;
+
+  function loop(now) {
+    if (now > nextBlink) {
+      blinkUntil = now + 130;
+      nextBlink = now + 2800 + Math.random() * 3200;
+    }
+    if (now > nextEar) {
+      earUntil = now + 240;
+      nextEar = now + 1900 + Math.random() * 2600;
+    }
+    if (now > nextTail) {
+      state.tail = Math.random() < 0.5 ? -1 : 1;
+      nextTail = now + 700 + Math.random() * 1200;
+    }
+    state.blink = now < blinkUntil;
+    state.ear = now < earUntil ? 1 : 0;
+
+    if (now - t > 60) {
+      t = now;
+      draw();
+    }
+    requestAnimationFrame(loop);
+  }
+
+  draw();
+  requestAnimationFrame(loop);
 })();
