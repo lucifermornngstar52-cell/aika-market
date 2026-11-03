@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-03T13:44:36.150Z",
+ "generated": "2026-11-03T14:26:56.383Z",
  "items": [
   {
-   "title": "Aika Market",
+   "title": "HIKARI store",
    "cat": "tool",
-   "icon": "✨",
+   "icon": "assets/icons/hikari.png",
    "grad": [
     "#5cb8e8",
     "#2b5f8f"
@@ -22,7 +22,7 @@
        "name": "AikaMarket-1.0.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.0/AikaMarket-1.0.apk",
        "size": 106892,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     }
@@ -37,7 +37,7 @@
       "name": "AikaMarket-1.0.apk",
       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.0/AikaMarket-1.0.apk",
       "size": 106892,
-      "downloads": 0
+      "downloads": 1
      }
     ]
    }
@@ -45,7 +45,7 @@
   {
    "title": "Aika Assistant",
    "cat": "app",
-   "icon": "🌸",
+   "icon": "assets/icons/aika-assistant.png",
    "grad": [
     "#5ef2d6",
     "#a06bff"
@@ -164,34 +164,6 @@
        "downloads": 0
       }
      ]
-    },
-    {
-     "tag": "build-1410",
-     "name": "Aivora — build-1410",
-     "notes": "Лог-вьюер: фикс красного лога (contains('') всегда true); EdgeTTS: прогрев только для edge-движка, троттлинг 10 мин, тихий фолбэк при 403",
-     "date": "2026-10-04T01:21:18Z",
-     "assets": [
-      {
-       "name": "aivora-build-1410.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1410/aivora-build-1410.apk",
-       "size": 146774441,
-       "downloads": 0
-      }
-     ]
-    },
-    {
-     "tag": "build-1408",
-     "name": "Aivora — build-1408",
-     "notes": "Системные команды не матчатся на приложения (фикс маршрутизации); runtime BLUETOOTH_CONNECT; EdgeTTS 403 фикс (серверное время); парсер яркости/громкости; дым во всех настройках",
-     "date": "2026-10-04T00:57:01Z",
-     "assets": [
-      {
-       "name": "aivora-build-1408.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1408/aivora-build-1408.apk",
-       "size": 146741673,
-       "downloads": 0
-      }
-     ]
     }
    ],
    "latest": {
@@ -212,7 +184,7 @@
   {
    "title": "Numbra",
    "cat": "game",
-   "icon": "🕰️",
+   "icon": "assets/icons/numbra.png",
    "grad": [
     "#ffc861",
     "#ff6b81"
@@ -273,7 +245,7 @@
   {
    "title": "Rust Lite",
    "cat": "game",
-   "icon": "🔩",
+   "icon": "assets/icons/rustlite.png",
    "grad": [
     "#c98b5e",
     "#7a4a2a"
@@ -412,7 +384,7 @@
   {
    "title": "АЙКА МИР",
    "cat": "app",
-   "icon": "🌍",
+   "icon": "assets/icons/aika-world.png",
    "grad": [
     "#4fd7ff",
     "#2b6bff"
@@ -545,20 +517,6 @@
        "downloads": 3
       }
      ]
-    },
-    {
-     "tag": "v1.0.14",
-     "name": "v1.0.14",
-     "notes": "",
-     "date": "2026-09-16T03:16:38Z",
-     "assets": [
-      {
-       "name": "aika-world.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.14/aika-world.apk",
-       "size": 91411,
-       "downloads": 2
-      }
-     ]
     }
    ],
    "latest": {
@@ -579,7 +537,7 @@
   {
    "title": "NEON STRIKE",
    "cat": "game",
-   "icon": "🔫",
+   "icon": "assets/icons/neon-strike.png",
    "grad": [
     "#ff2d95",
     "#7000ff"
@@ -592,7 +550,7 @@
   {
    "title": "ЖОЛ — симулятор вождения",
    "cat": "game",
-   "icon": "🚗",
+   "icon": "assets/icons/zhol.png",
    "grad": [
     "#5ef2d6",
     "#0f8f6b"
@@ -605,7 +563,7 @@
   {
    "title": "PenkovBank",
    "cat": "tool",
-   "icon": "🏦",
+   "icon": "assets/icons/penkovbank.png",
    "grad": [
     "#8ad4ff",
     "#2452ff"
@@ -618,7 +576,7 @@
   {
    "title": "nanoGPT",
    "cat": "tool",
-   "icon": "🧠",
+   "icon": "assets/icons/nanogpt.png",
    "grad": [
     "#a06bff",
     "#4b1f8f"
@@ -631,7 +589,7 @@
   {
    "title": "История Новомихайловки",
    "cat": "web",
-   "icon": "📖",
+   "icon": "assets/icons/novomihaylovka.png",
    "grad": [
     "#e0b98a",
     "#8a5a2b"
@@ -644,7 +602,7 @@
   {
    "title": "ZikOS",
    "cat": "tool",
-   "icon": "💻",
+   "icon": "assets/icons/zikos.png",
    "grad": [
     "#5ef2d6",
     "#0a6a7a"

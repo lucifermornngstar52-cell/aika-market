@@ -13,9 +13,9 @@ const CACHE_TTL = 10 * 60 * 1000;
 const APPS = [
   {
     repo: 'aika-market',
-    title: 'Aika Market',
+    title: 'HIKARI store',
     cat: 'tool',
-    icon: '✨',
+    icon: 'assets/icons/hikari.png',
     grad: ['#5cb8e8', '#2b5f8f'],
     desc: 'Этот самый магазин, но как приложение: та же полка, тот же каталог, установка в один тап. Обновляется из самого себя.',
     web: 'https://lucifermornngstar52-cell.github.io/aika-market/'
@@ -24,7 +24,7 @@ const APPS = [
     repo: 'aika-assistant',
     title: 'Aika Assistant',
     cat: 'app',
-    icon: '🌸',
+    icon: 'assets/icons/aika-assistant.png',
     grad: ['#5ef2d6', '#a06bff'],
     desc: 'Моя Айка: голосовой ассистент с Live2D и 3D-аватаром, управлением телефоном через AccessibilityService, чтением уведомлений и умными ответами. Gemini 2.0 Flash и GPT-4o внутри.'
   },
@@ -32,7 +32,7 @@ const APPS = [
     repo: 'clock-angle-game',
     title: 'Numbra',
     cat: 'game',
-    icon: '🕰️',
+    icon: 'assets/icons/numbra.png',
     grad: ['#ffc861', '#ff6b81'],
     desc: 'Игра на углы между стрелками часов: четыре уровня сложности, тысячи вопросов, монеты и достижения. Плюс книга задач «Математика времени» в стиле Рика и Морти.',
     web: 'https://lucifermornngstar52-cell.github.io/clock-angle-game/'
@@ -41,7 +41,7 @@ const APPS = [
     repo: 'rustlite',
     title: 'Rust Lite',
     cat: 'game',
-    icon: '🔩',
+    icon: 'assets/icons/rustlite.png',
     grad: ['#c98b5e', '#7a4a2a'],
     desc: 'Выживание на минималках: собирай, строй, держись подальше от чужих. Лёгкая сборка для слабых телефонов.'
   },
@@ -49,7 +49,7 @@ const APPS = [
     repo: 'aika-world-app',
     title: 'АЙКА МИР',
     cat: 'app',
-    icon: '🌍',
+    icon: 'assets/icons/aika-world.png',
     grad: ['#4fd7ff', '#2b6bff'],
     desc: 'Пиксельная деревня, которая живёт своей жизнью: процедурные жители, погода, циклы дня. APK-обёртка онлайн-мира.',
     web: 'https://lucifermornngstar52-cell.github.io/aika-world/'
@@ -58,7 +58,7 @@ const APPS = [
     repo: '',
     title: 'NEON STRIKE',
     cat: 'game',
-    icon: '🔫',
+    icon: 'assets/icons/neon-strike.png',
     grad: ['#ff2d95', '#7000ff'],
     desc: 'Браузерный 3D-шутер на Three.js: неоновый город, стрельба, мобильное управление. Открывается прямо в браузере, ставить ничего не надо.',
     web: 'https://lucifermornngstar52-cell.github.io/neon-strike/'
@@ -67,7 +67,7 @@ const APPS = [
     repo: '',
     title: 'ЖОЛ — симулятор вождения',
     cat: 'game',
-    icon: '🚗',
+    icon: 'assets/icons/zhol.png',
     grad: ['#5ef2d6', '#0f8f6b'],
     desc: 'Симулятор вождения по правилам ПДД Казахстана: знаки, разметка, экзаменационные маршруты.',
     web: 'https://lucifermornngstar52-cell.github.io/zhol-driving-sim/'
@@ -76,7 +76,7 @@ const APPS = [
     repo: '',
     title: 'PenkovBank',
     cat: 'tool',
-    icon: '🏦',
+    icon: 'assets/icons/penkovbank.png',
     grad: ['#8ad4ff', '#2452ff'],
     desc: 'Цифровой банк нового поколения: карты, переводы, интерфейс как у настоящего банка. Учебный проект.',
     web: 'https://lucifermornngstar52-cell.github.io/penkov-bank/'
@@ -85,7 +85,7 @@ const APPS = [
     repo: '',
     title: 'nanoGPT',
     cat: 'tool',
-    icon: '🧠',
+    icon: 'assets/icons/nanogpt.png',
     grad: ['#a06bff', '#4b1f8f'],
     desc: 'GPT с нуля на чистом NumPy: 350 тысяч параметров, написан вручную, обучается прямо в браузере.',
     web: 'https://lucifermornngstar52-cell.github.io/nano-gpt/'
@@ -94,7 +94,7 @@ const APPS = [
     repo: '',
     title: 'История Новомихайловки',
     cat: 'web',
-    icon: '📖',
+    icon: 'assets/icons/novomihaylovka.png',
     grad: ['#e0b98a', '#8a5a2b'],
     desc: 'История села Новомихайловка с 1895 по 2026 год: архивные материалы, фотографии, хронология.',
     web: 'https://lucifermornngstar52-cell.github.io/novomihaylovka/'
@@ -103,7 +103,7 @@ const APPS = [
     repo: '',
     title: 'ZikOS',
     cat: 'tool',
-    icon: '💻',
+    icon: 'assets/icons/zikos.png',
     grad: ['#5ef2d6', '#0a6a7a'],
     desc: 'Веб-операционная система в браузере: окна, приложения, рабочий стол.',
     web: 'https://lucifermornngstar52-cell.github.io/zik-os/'
@@ -269,8 +269,9 @@ function render() {
     const apk = apkOf(a.latest);
     const isNew = a.latest && Date.now() - new Date(a.latest.date) < 7 * 86400000;
 
-    card.appendChild(el('div', 'icon', a.icon));
-    card.querySelector('.icon').style.background = `linear-gradient(135deg, ${a.grad[0]}, ${a.grad[1]})`;
+    const icEl = el('div', 'icon', a.icon.includes('/') ? `<img src="${a.icon}" alt="" loading="lazy">` : a.icon);
+    if (!a.icon.includes('/')) icEl.style.background = `linear-gradient(135deg, ${a.grad[0]}, ${a.grad[1]})`;
+    card.appendChild(icEl);
 
     const main = el('div', 'card-main');
     const titleRow = el('div', 'card-title', `<b>${a.title}</b>`
@@ -319,8 +320,8 @@ function openSheet(a) {
   card.innerHTML = '';
 
   const head = el('div', 'sheet-head');
-  const ic = el('div', 'icon', a.icon);
-  ic.style.background = `linear-gradient(135deg, ${a.grad[0]}, ${a.grad[1]})`;
+  const ic = el('div', 'icon', a.icon.includes('/') ? `<img src="${a.icon}" alt="">` : a.icon);
+  if (!a.icon.includes('/')) ic.style.background = `linear-gradient(135deg, ${a.grad[0]}, ${a.grad[1]})`;
   head.appendChild(ic);
   const ht = el('div', '', `<div class="sheet-name">${a.title}</div>
     <div class="sheet-dev">${a.latest ? 'версия ' + a.latest.tag + ' · ' + fmtDate(a.latest.date) : 'веб-версия'}</div>`);

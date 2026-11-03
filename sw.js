@@ -1,5 +1,5 @@
-const CACHE = 'aika-market-v1';
-const FILES = ['./', './index.html', './style.css', './app.js', './icon.svg', './manifest.json'];
+const CACHE = 'hikari-store-v3';
+const FILES = ['./', './index.html', './style.css', './app.js', './manifest.json', './assets/icons/hikari.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
