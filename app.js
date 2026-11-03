@@ -266,6 +266,7 @@ function render() {
       meta.appendChild(el('span', 'm-item', `<svg class="mi"><use href="#i-size"/></svg>${fmtSize(apk.size)}`));
     }
     main.appendChild(meta);
+    if (apk) main.appendChild(el('div', 'card-file', '📦 ' + apk.name));
     card.appendChild(main);
 
     const btn = el('button', 'get',
@@ -442,3 +443,133 @@ if ('serviceWorker' in navigator) {
 }
 
 loadCatalog(false);
+
+// ---------- пиксельный кот: гуляет в фоне, ничего не перекрывает ----------
+(function pet() {
+  const cv = document.getElementById('pet');
+  if (!cv || !cv.getContext) return;
+  const ctx = cv.getContext('2d');
+  const PX = 3, W = 17, H = 12;
+  cv.width = W * PX;
+  cv.height = H * PX;
+
+  const C = { o: '#0c0c0c', b: '#f4ebd9', p: '#ff9ec4', e: '#141414', s: 'rgba(0,0,0,0.35)' };
+
+  const F = {
+    walk1: [
+      '....oo......oo...',
+      '...oboo....oobo..',
+      '...obbbbbbbbbbo..',
+      '..obbbbbbbbbbbbo.',
+      '.obbebbbbbbebbbo.',
+      '.obbbbbppbbbbbbo.',
+      '.obbbbbbbbbbbbbo.',
+      '..obbbbbbbbbbbo..',
+      '..obbbbbbbbbbbo..',
+      '...oo.ooo.ooo....',
+      '...o...o...o.....',
+      '.................'
+    ],
+    walk2: [
+      '....oo......oo...',
+      '...oboo....oobo..',
+      '...obbbbbbbbbbo..',
+      '..obbbbbbbbbbbbo.',
+      '.obbebbbbbbebbbo.',
+      '.obbbbbppbbbbbbo.',
+      '.obbbbbbbbbbbbbo.',
+      '..obbbbbbbbbbbo..',
+      '..obbbbbbbbbbbo..',
+      '..oo.ooo...ooo...',
+      '..o....o....o....',
+      '.................'
+    ],
+    sit: [
+      '.................',
+      '....oo......oo...',
+      '...oboo....oobo..',
+      '...obbbbbbbbbbo..',
+      '..obbbbbbbbbbbbo.',
+      '.obbebbbbbbebbbo.',
+      '.obbbbbppbbbbbbo.',
+      '.obbbbbbbbbbbbbo.',
+      '..obbbbbbbbbbbbo.',
+      '..oobbbbbbbbooo..',
+      '...oooooooooo....',
+      '.................'
+    ]
+  };
+
+  function draw(name, flip) {
+    const rows = F[name] || F.walk1;
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.save();
+    if (flip) {
+      ctx.translate(cv.width, 0);
+      ctx.scale(-1, 1);
+    }
+    // тень
+    ctx.fillStyle = C.s;
+    ctx.fillRect(3 * PX, 11 * PX, 11 * PX, PX);
+    for (let y = 0; y < rows.length; y++) {
+      const line = rows[y] || '';
+      for (let x = 0; x < W; x++) {
+        const ch = line[x];
+        if (!ch || ch === '.' || !C[ch]) continue;
+        ctx.fillStyle = C[ch];
+        ctx.fillRect(x * PX, y * PX, PX, PX);
+      }
+    }
+    ctx.restore();
+  }
+
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let x = 24, dir = 1, speed = 24, paused = true, pauseUntil = performance.now() + 1600, frame = 0, lastFlip = 0;
+  const sheet = document.getElementById('sheet');
+
+  function tick(now) {
+    const w = window.innerWidth;
+    const maxX = Math.max(40, w - cv.width - 16);
+
+    if (paused) {
+      if (now >= pauseUntil) {
+        paused = false;
+        dir = Math.random() < 0.5 ? -1 : 1;
+        speed = 20 + Math.random() * 16;
+      }
+    } else {
+      x += dir * speed * 0.016;
+      if (x < 8) { x = 8; dir = 1; }
+      if (x > maxX) { x = maxX; dir = -1; }
+      if (Math.random() < 0.0035) {
+        paused = true;
+        pauseUntil = now + 1500 + Math.random() * 3200;
+      }
+    }
+
+    cv.style.transform = 'translateX(' + x.toFixed(1) + 'px)';
+    cv.style.opacity = sheet && !sheet.classList.contains('hidden') ? '0' : '0.62';
+
+    const walking = !paused;
+    const f = walking ? (Math.floor(now / 220) % 2 === 0 ? 'walk1' : 'walk2') : 'sit';
+    if (f !== frame) {
+      frame = f;
+      draw(f, dir < 0);
+    } else if (dir < 0 && lastFlip !== dir) {
+      lastFlip = dir;
+      draw(f, true);
+    } else if (dir > 0 && lastFlip !== dir) {
+      lastFlip = dir;
+      draw(f, false);
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  if (reduce) {
+    draw('sit', false);
+    cv.style.opacity = '0.5';
+    return;
+  }
+  requestAnimationFrame(tick);
+})();

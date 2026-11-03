@@ -553,3 +553,26 @@ svg { display: inline-block; }
 .cta, .btn, .get, .install, .ghost { display: inline-flex; align-items: center; justify-content: center; gap: 0; }
 
 .sprite, .icon img { user-select: none; }
+
+/* ---------- пиксельный кот в фоне ---------- */
+#pet {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  image-rendering: pixelated;
+  opacity: 0.62;
+  pointer-events: none;
+  will-change: transform;
+  filter: drop-shadow(0 0 8px rgba(92, 184, 232, 0.35));
+  transition: opacity 0.35s;
+}
+
+.card-file {
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: 0.3px;
+  color: #575757;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
