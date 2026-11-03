@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T13:44:16.507Z",
+ "generated": "2026-11-03T13:44:36.150Z",
  "items": [
   {
    "title": "Aika Market",
@@ -161,6 +161,34 @@
        "name": "aivora-build-1413.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1413/aivora-build-1413.apk",
        "size": 146774441,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1410",
+     "name": "Aivora — build-1410",
+     "notes": "Лог-вьюер: фикс красного лога (contains('') всегда true); EdgeTTS: прогрев только для edge-движка, троттлинг 10 мин, тихий фолбэк при 403",
+     "date": "2026-10-04T01:21:18Z",
+     "assets": [
+      {
+       "name": "aivora-build-1410.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1410/aivora-build-1410.apk",
+       "size": 146774441,
+       "downloads": 0
+      }
+     ]
+    },
+    {
+     "tag": "build-1408",
+     "name": "Aivora — build-1408",
+     "notes": "Системные команды не матчатся на приложения (фикс маршрутизации); runtime BLUETOOTH_CONNECT; EdgeTTS 403 фикс (серверное время); парсер яркости/громкости; дым во всех настройках",
+     "date": "2026-10-04T00:57:01Z",
+     "assets": [
+      {
+       "name": "aivora-build-1408.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1408/aivora-build-1408.apk",
+       "size": 146741673,
        "downloads": 0
       }
      ]
@@ -515,6 +543,20 @@
        "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.15/aika-world.apk",
        "size": 95623,
        "downloads": 3
+      }
+     ]
+    },
+    {
+     "tag": "v1.0.14",
+     "name": "v1.0.14",
+     "notes": "",
+     "date": "2026-09-16T03:16:38Z",
+     "assets": [
+      {
+       "name": "aika-world.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.14/aika-world.apk",
+       "size": 91411,
+       "downloads": 2
       }
      ]
     }
