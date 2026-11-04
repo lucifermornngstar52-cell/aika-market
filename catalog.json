@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T14:48:31.813Z",
+ "generated": "2026-11-04T08:10:28.253Z",
  "items": [
   {
    "title": "Aika Assistant",
@@ -22,7 +22,7 @@
        "name": "aivora-build-1432.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1432/aivora-build-1432.apk",
        "size": 141978878,
-       "downloads": 1
+       "downloads": 7
       }
      ]
     },
@@ -135,7 +135,7 @@
       "name": "aivora-build-1432.apk",
       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1432/aivora-build-1432.apk",
       "size": 141978878,
-      "downloads": 1
+      "downloads": 7
      }
     ]
    }
@@ -199,7 +199,8 @@
       "downloads": 2
      }
     ]
-   }
+   },
+   "mirror": "apk/numbra-release.apk"
   },
   {
    "title": "АЙКА МИР",
@@ -352,7 +353,8 @@
       "downloads": 3
      }
     ]
-   }
+   },
+   "mirror": "apk/aika-world.apk"
   },
   {
    "title": "NEON STRIKE",
@@ -375,7 +377,7 @@
        "name": "NeonStrike.apk",
        "url": "https://github.com/lucifermornngstar52-cell/neon-strike/releases/download/app-v1/NeonStrike.apk",
        "size": 222083,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     }
@@ -390,10 +392,11 @@
       "name": "NeonStrike.apk",
       "url": "https://github.com/lucifermornngstar52-cell/neon-strike/releases/download/app-v1/NeonStrike.apk",
       "size": 222083,
-      "downloads": 0
+      "downloads": 1
      }
     ]
-   }
+   },
+   "mirror": "apk/NeonStrike.apk"
   },
   {
    "title": "ЖОЛ — симулятор вождения",
@@ -434,7 +437,8 @@
       "downloads": 0
      }
     ]
-   }
+   },
+   "mirror": "apk/Zhol.apk"
   },
   {
    "title": "Rust Lite",
@@ -573,7 +577,8 @@
       "downloads": 3
      }
     ]
-   }
+   },
+   "mirror": "apk/RustLite.apk"
   },
   {
    "title": "nanoGPT",
@@ -610,139 +615,139 @@
        "name": "bpe_tokenizer_700.json",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/bpe_tokenizer_700.json",
        "size": 744791,
-       "downloads": 2
+       "downloads": 3
       },
       {
        "name": "tok700_00.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_00.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_00.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_00.p0",
        "size": 1900000000,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_00.p1",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_00.p1",
        "size": 43300264,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_01.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_01.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_01.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_01.p0",
        "size": 1900000000,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_01.p1",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_01.p1",
        "size": 117519638,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_02.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_02.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_02.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_02.p0",
        "size": 1724427574,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_03.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_03.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_03.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_03.p0",
        "size": 1654295816,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_04.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_04.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_04.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_04.p0",
        "size": 1299179450,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_05.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_05.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_05.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_05.p0",
        "size": 1108393648,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_06.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_06.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_06.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_06.p0",
        "size": 1900000000,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_06.p1",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_06.p1",
        "size": 294778356,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_07.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_07.done",
        "size": 33,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_07.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_07.p0",
        "size": 1900000000,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_07.p1",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_07.p1",
        "size": 65638472,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "tok700_dial.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_dial.done",
        "size": 32,
-       "downloads": 1
+       "downloads": 2
       },
       {
        "name": "tok700_dial.p0",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_dial.p0",
        "size": 132140652,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -756,13 +761,13 @@
        "name": "meta_150m.json",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/char-150m/meta_150m.json",
        "size": 1724,
-       "downloads": 9
+       "downloads": 10
       },
       {
        "name": "weights_150m_fp16.npz",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/char-150m/weights_150m_fp16.npz",
        "size": 303737856,
-       "downloads": 10
+       "downloads": 11
       }
      ]
     }
@@ -780,7 +785,8 @@
       "downloads": 0
      }
     ]
-   }
+   },
+   "mirror": "apk/NanoGPT.apk"
   },
   {
    "title": "ZikOS",
@@ -803,7 +809,7 @@
        "name": "HikariOS-3.2.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.3/HikariOS-3.2.apk",
        "size": 149417,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -817,7 +823,7 @@
        "name": "ZikOS.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/app-v1/ZikOS.apk",
        "size": 112404,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -831,7 +837,7 @@
        "name": "HikariRemote-1.2.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.2/HikariRemote-1.2.apk",
        "size": 24340,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -845,13 +851,13 @@
        "name": "HikariOS-3.1.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.1/HikariOS-3.1.apk",
        "size": 149283,
-       "downloads": 4
+       "downloads": 5
       },
       {
        "name": "HikariRemote-1.1.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.1/HikariRemote-1.1.apk",
        "size": 24263,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -865,13 +871,13 @@
        "name": "HikariOS-3.0.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.0/HikariOS-3.0.apk",
        "size": 146880,
-       "downloads": 0
+       "downloads": 1
       },
       {
        "name": "HikariRemote-1.0.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.0/HikariRemote-1.0.apk",
        "size": 21291,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -885,7 +891,7 @@
        "name": "HikariOS-2.9.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.9/HikariOS-2.9.apk",
        "size": 142584,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -899,7 +905,7 @@
        "name": "HikariOS-2.8.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.8/HikariOS-2.8.apk",
        "size": 142236,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -913,7 +919,7 @@
        "name": "HikariOS-2.7.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.7/HikariOS-2.7.apk",
        "size": 137813,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -927,7 +933,7 @@
        "name": "HikariOS-2.6.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.6/HikariOS-2.6.apk",
        "size": 136702,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -941,7 +947,7 @@
        "name": "HikariOS-2.5.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v2.5/HikariOS-2.5.apk",
        "size": 136171,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     }
@@ -956,10 +962,11 @@
       "name": "HikariOS-3.2.apk",
       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.3/HikariOS-3.2.apk",
       "size": 149417,
-      "downloads": 1
+      "downloads": 2
      }
     ]
-   }
+   },
+   "mirror": "apk/HikariOS-3.2.apk"
   },
   {
    "title": "HIKARI store",
@@ -1014,7 +1021,8 @@
       "downloads": 0
      }
     ]
-   }
+   },
+   "mirror": "apk/HikariStore-1.1.apk"
   }
  ]
 }

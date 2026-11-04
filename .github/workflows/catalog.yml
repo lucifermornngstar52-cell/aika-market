@@ -27,9 +27,13 @@ jobs:
         run: node build-catalog.mjs
         env:
           T: ${{ secrets.GITHUB_TOKEN }}
+      - name: Зеркалировать APK в сайт
+        run: node mirror-apk.mjs
+        env:
+          T: ${{ secrets.GITHUB_TOKEN }}
       - name: Закоммитить
         run: |
           git config user.name "Aika Market"
           git config user.email "aika@local"
-          git add catalog.json
+          git add catalog.json apk
           git diff --staged --quiet && echo "без изменений" || (git commit -m "catalog: автообновление" && git push)

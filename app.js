@@ -274,7 +274,7 @@ function render() {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       if (apk) {
-        window.location.href = apk.url;
+        window.location.href = a.mirror || apk.url;
         toast('Загрузка APK началась');
       } else if (a.web) {
         window.open(a.web, '_blank');
@@ -316,7 +316,7 @@ function openSheet(a) {
   if (apk) {
     const b = el('button', 'install', `<svg class="ti"><use href="#i-down"/></svg>установить · ${fmtSize(apk.size)}`);
     b.addEventListener('click', () => {
-      window.location.href = apk.url;
+      window.location.href = a.mirror || apk.url;
       toast('Загрузка APK началась');
     });
     actions.appendChild(b);
