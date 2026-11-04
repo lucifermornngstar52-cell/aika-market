@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T08:16:36.623Z",
+ "generated": "2026-11-04T08:22:07.008Z",
  "items": [
   {
    "title": "Aika Assistant",
@@ -123,34 +123,6 @@
        "downloads": 0
       }
      ]
-    },
-    {
-     "tag": "build-1410",
-     "name": "Aivora — build-1410",
-     "notes": "Лог-вьюер: фикс красного лога (contains('') всегда true); EdgeTTS: прогрев только для edge-движка, троттлинг 10 мин, тихий фолбэк при 403",
-     "date": "2026-10-04T01:21:18Z",
-     "assets": [
-      {
-       "name": "aivora-build-1410.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1410/aivora-build-1410.apk",
-       "size": 146774441,
-       "downloads": 0
-      }
-     ]
-    },
-    {
-     "tag": "build-1408",
-     "name": "Aivora — build-1408",
-     "notes": "Системные команды не матчатся на приложения (фикс маршрутизации); runtime BLUETOOTH_CONNECT; EdgeTTS 403 фикс (серверное время); парсер яркости/громкости; дым во всех настройках",
-     "date": "2026-10-04T00:57:01Z",
-     "assets": [
-      {
-       "name": "aivora-build-1408.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1408/aivora-build-1408.apk",
-       "size": 146741673,
-       "downloads": 0
-      }
-     ]
     }
    ],
    "latest": {
@@ -189,7 +161,7 @@
        "name": "numbra-release.apk",
        "url": "https://github.com/lucifermornngstar52-cell/clock-angle-game/releases/download/numbra-release/numbra-release.apk",
        "size": 11711628,
-       "downloads": 2
+       "downloads": 3
       }
      ]
     },
@@ -224,7 +196,7 @@
       "name": "numbra-release.apk",
       "url": "https://github.com/lucifermornngstar52-cell/clock-angle-game/releases/download/numbra-release/numbra-release.apk",
       "size": 11711628,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -251,7 +223,7 @@
        "name": "aika-world.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.23/aika-world.apk",
        "size": 104823,
-       "downloads": 3
+       "downloads": 4
       }
      ]
     },
@@ -366,20 +338,6 @@
        "downloads": 3
       }
      ]
-    },
-    {
-     "tag": "v1.0.14",
-     "name": "v1.0.14",
-     "notes": "",
-     "date": "2026-09-16T03:16:38Z",
-     "assets": [
-      {
-       "name": "aika-world.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.14/aika-world.apk",
-       "size": 91411,
-       "downloads": 2
-      }
-     ]
     }
    ],
    "latest": {
@@ -392,7 +350,7 @@
       "name": "aika-world.apk",
       "url": "https://github.com/lucifermornngstar52-cell/aika-world-app/releases/download/v1.0.23/aika-world.apk",
       "size": 104823,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -419,7 +377,7 @@
        "name": "NeonStrike.apk",
        "url": "https://github.com/lucifermornngstar52-cell/neon-strike/releases/download/app-v1/NeonStrike.apk",
        "size": 222083,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     }
@@ -434,7 +392,7 @@
       "name": "NeonStrike.apk",
       "url": "https://github.com/lucifermornngstar52-cell/neon-strike/releases/download/app-v1/NeonStrike.apk",
       "size": 222083,
-      "downloads": 1
+      "downloads": 2
      }
     ]
    },
@@ -461,7 +419,7 @@
        "name": "Zhol.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zhol-driving-sim/releases/download/app-v1/Zhol.apk",
        "size": 165208,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     }
@@ -476,7 +434,7 @@
       "name": "Zhol.apk",
       "url": "https://github.com/lucifermornngstar52-cell/zhol-driving-sim/releases/download/app-v1/Zhol.apk",
       "size": 165208,
-      "downloads": 0
+      "downloads": 1
      }
     ]
    },
@@ -503,7 +461,7 @@
        "name": "RustLite.apk",
        "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
        "size": 286296,
-       "downloads": 3
+       "downloads": 4
       }
      ]
     },
@@ -616,7 +574,7 @@
       "name": "RustLite.apk",
       "url": "https://github.com/lucifermornngstar52-cell/rustlite/releases/download/v8/RustLite.apk",
       "size": 286296,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -643,7 +601,7 @@
        "name": "NanoGPT.apk",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/app-v1/NanoGPT.apk",
        "size": 173684,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -824,7 +782,7 @@
       "name": "NanoGPT.apk",
       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/app-v1/NanoGPT.apk",
       "size": 173684,
-      "downloads": 0
+      "downloads": 1
      }
     ]
    },
@@ -851,7 +809,7 @@
        "name": "HikariOS-3.2.apk",
        "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.3/HikariOS-3.2.apk",
        "size": 149417,
-       "downloads": 2
+       "downloads": 3
       }
      ]
     },
@@ -1004,7 +962,7 @@
       "name": "HikariOS-3.2.apk",
       "url": "https://github.com/lucifermornngstar52-cell/zik-os/releases/download/v3.3/HikariOS-3.2.apk",
       "size": 149417,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -1013,7 +971,7 @@
   {
    "title": "HIKARI store",
    "cat": "tool",
-   "icon": "assets/icons/hikari-app.png",
+   "icon": "assets/icons/hikari.png",
    "grad": [
     "#5cb8e8",
     "#2b5f8f"
@@ -1021,6 +979,20 @@
    "desc": "Сам магазин как приложение: та же полка, обновления подтягиваются сами.",
    "web": "",
    "releases": [
+    {
+     "tag": "v1.4",
+     "name": "Hikari Store v1.4",
+     "notes": "- иконка как в 1.1\n- имя без изменений: Hikari Store",
+     "date": "2026-11-04T08:22:00Z",
+     "assets": [
+      {
+       "name": "HikariStore-1.4.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.4/HikariStore-1.4.apk",
+       "size": 159440,
+       "downloads": 0
+      }
+     ]
+    },
     {
      "tag": "v1.3",
      "name": "Hikari Store v1.3",
@@ -1059,7 +1031,7 @@
        "name": "HikariStore-1.1.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.1/HikariStore-1.1.apk",
        "size": 158884,
-       "downloads": 0
+       "downloads": 4
       }
      ]
     },
@@ -1079,20 +1051,20 @@
     }
    ],
    "latest": {
-    "tag": "v1.3",
-    "name": "Hikari Store v1.3",
-    "notes": "- вернул прежнюю иконку приложения\n- имя: Hikari Store",
-    "date": "2026-11-04T08:16:13Z",
+    "tag": "v1.4",
+    "name": "Hikari Store v1.4",
+    "notes": "- иконка как в 1.1\n- имя без изменений: Hikari Store",
+    "date": "2026-11-04T08:22:00Z",
     "assets": [
      {
-      "name": "HikariStore-1.3.apk",
-      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.3/HikariStore-1.3.apk",
-      "size": 107456,
+      "name": "HikariStore-1.4.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.4/HikariStore-1.4.apk",
+      "size": 159440,
       "downloads": 0
      }
     ]
    },
-   "mirror": "apk/HikariStore-1.3.apk"
+   "mirror": "apk/HikariStore-1.4.apk"
   }
  ]
 }

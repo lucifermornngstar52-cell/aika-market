@@ -75,7 +75,7 @@ const APPS = [
     repo: 'aika-market',
     title: 'HIKARI store',
     cat: 'tool',
-    icon: 'assets/icons/hikari-app.png',
+    icon: 'assets/icons/hikari.png',
     grad: ['#5cb8e8', '#2b5f8f'],
     desc: 'Сам магазин как приложение: та же полка, обновления подтягиваются сами.'
   }
