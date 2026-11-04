@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T08:12:47.784Z",
+ "generated": "2026-11-04T08:16:20.217Z",
  "items": [
   {
    "title": "Aika Assistant",
@@ -971,7 +971,7 @@
   {
    "title": "HIKARI store",
    "cat": "tool",
-   "icon": "assets/icons/hikari.png",
+   "icon": "assets/icons/hikari-app.png",
    "grad": [
     "#5cb8e8",
     "#2b5f8f"
@@ -979,6 +979,20 @@
    "desc": "Сам магазин как приложение: та же полка, обновления подтягиваются сами.",
    "web": "",
    "releases": [
+    {
+     "tag": "v1.3",
+     "name": "Hikari Store v1.3",
+     "notes": "- вернул прежнюю иконку приложения\n- имя: Hikari Store",
+     "date": "2026-11-04T08:16:13Z",
+     "assets": [
+      {
+       "name": "HikariStore-1.3.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.3/HikariStore-1.3.apk",
+       "size": 107456,
+       "downloads": 0
+      }
+     ]
+    },
     {
      "tag": "v1.2",
      "name": "Hikari Store v1.2",
@@ -1023,20 +1037,20 @@
     }
    ],
    "latest": {
-    "tag": "v1.2",
-    "name": "Hikari Store v1.2",
-    "notes": "- приложение называется Hikari Store\n- APK теперь зеркалится прямо в сайт: загрузка больше не висит на 100%",
-    "date": "2026-11-04T08:12:40Z",
+    "tag": "v1.3",
+    "name": "Hikari Store v1.3",
+    "notes": "- вернул прежнюю иконку приложения\n- имя: Hikari Store",
+    "date": "2026-11-04T08:16:13Z",
     "assets": [
      {
-      "name": "HikariStore-1.2.apk",
-      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.2/HikariStore-1.2.apk",
-      "size": 112412,
+      "name": "HikariStore-1.3.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-market/releases/download/v1.3/HikariStore-1.3.apk",
+      "size": 107456,
       "downloads": 0
      }
     ]
    },
-   "mirror": "apk/HikariStore-1.2.apk"
+   "mirror": "apk/HikariStore-1.3.apk"
   }
  ]
 }
