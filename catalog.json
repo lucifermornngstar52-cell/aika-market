@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T10:17:51.300Z",
+ "generated": "2026-11-05T10:11:21.028Z",
  "items": [
   {
    "title": "Aika Assistant",
@@ -13,6 +13,20 @@
    "web": "",
    "releases": [
     {
+     "tag": "test-5nov-ui",
+     "name": "Тест 5 ноября: UI, контакты, напоминания, без Джарвиса",
+     "notes": "Тестовая сборка с ветки feat/ui-permissions-contacts-reminders. Не main.",
+     "date": "2026-11-05T02:24:28Z",
+     "assets": [
+      {
+       "name": "Aika-test-5nov.apk",
+       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/test-5nov-ui/Aika-test-5nov.apk",
+       "size": 140815966,
+       "downloads": 3
+      }
+     ]
+    },
+    {
      "tag": "build-1432",
      "name": "Aivora — build-1432",
      "notes": "Триал 4 дня + покупка полной версии за 1 000 ₸. Version Code поднят до 1432 для RuStore.",
@@ -22,7 +36,7 @@
        "name": "aivora-build-1432.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1432/aivora-build-1432.apk",
        "size": 141978878,
-       "downloads": 7
+       "downloads": 8
       }
      ]
     },
@@ -36,7 +50,7 @@
        "name": "aivora-build-1430.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1430/aivora-build-1430.apk",
        "size": 141978874,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -50,7 +64,7 @@
        "name": "aivora-build-1428.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1428/aivora-build-1428.apk",
        "size": 141896798,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -64,7 +78,7 @@
        "name": "aivora-build-1424.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1424/aivora-build-1424.apk",
        "size": 141895798,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -78,7 +92,7 @@
        "name": "aivora-build-1422.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1422/aivora-build-1422.apk",
        "size": 141895798,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -92,7 +106,7 @@
        "name": "aivora-build-1419.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1419/aivora-build-1419.apk",
        "size": 141895670,
-       "downloads": 0
+       "downloads": 2
       }
      ]
     },
@@ -106,7 +120,7 @@
        "name": "aivora-build-1416.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1416/aivora-build-1416.apk",
        "size": 141895670,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -120,7 +134,7 @@
        "name": "aivora-build-1413.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1413/aivora-build-1413.apk",
        "size": 146774441,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     },
@@ -134,36 +148,22 @@
        "name": "aivora-build-1410.apk",
        "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1410/aivora-build-1410.apk",
        "size": 146774441,
-       "downloads": 0
-      }
-     ]
-    },
-    {
-     "tag": "build-1408",
-     "name": "Aivora — build-1408",
-     "notes": "Системные команды не матчатся на приложения (фикс маршрутизации); runtime BLUETOOTH_CONNECT; EdgeTTS 403 фикс (серверное время); парсер яркости/громкости; дым во всех настройках",
-     "date": "2026-10-04T00:57:01Z",
-     "assets": [
-      {
-       "name": "aivora-build-1408.apk",
-       "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1408/aivora-build-1408.apk",
-       "size": 146741673,
-       "downloads": 0
+       "downloads": 1
       }
      ]
     }
    ],
    "latest": {
-    "tag": "build-1432",
-    "name": "Aivora — build-1432",
-    "notes": "Триал 4 дня + покупка полной версии за 1 000 ₸. Version Code поднят до 1432 для RuStore.",
-    "date": "2026-10-11T07:44:45Z",
+    "tag": "test-5nov-ui",
+    "name": "Тест 5 ноября: UI, контакты, напоминания, без Джарвиса",
+    "notes": "Тестовая сборка с ветки feat/ui-permissions-contacts-reminders. Не main.",
+    "date": "2026-11-05T02:24:28Z",
     "assets": [
      {
-      "name": "aivora-build-1432.apk",
-      "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/build-1432/aivora-build-1432.apk",
-      "size": 141978878,
-      "downloads": 7
+      "name": "Aika-test-5nov.apk",
+      "url": "https://github.com/lucifermornngstar52-cell/aika-assistant/releases/download/test-5nov-ui/Aika-test-5nov.apk",
+      "size": 140815966,
+      "downloads": 3
      }
     ]
    }
