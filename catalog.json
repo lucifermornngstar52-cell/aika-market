@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T10:11:21.028Z",
+ "generated": "2026-11-06T10:14:56.998Z",
  "items": [
   {
    "title": "Aika Assistant",
@@ -643,7 +643,7 @@
        "name": "NanoGPT.apk",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/app-v1/NanoGPT.apk",
        "size": 173684,
-       "downloads": 1
+       "downloads": 2
       }
      ]
     },
@@ -711,7 +711,7 @@
        "name": "tok700_03.done",
        "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/corpus-700m/tok700_03.done",
        "size": 33,
-       "downloads": 2
+       "downloads": 3
       },
       {
        "name": "tok700_03.p0",
@@ -824,7 +824,7 @@
       "name": "NanoGPT.apk",
       "url": "https://github.com/lucifermornngstar52-cell/nano-gpt/releases/download/app-v1/NanoGPT.apk",
       "size": 173684,
-      "downloads": 1
+      "downloads": 2
      }
     ]
    },
